@@ -6,7 +6,7 @@ Code for generating linguistic linked open data image
 Example image
 -------------
 
-![LLOD Cloud](https://raw.github.com/jmccrae/llod-cloud-py/master/llod-cloud.png)
+![LLOD Cloud](https://raw.github.com/jmccrae/llod-cloud.py/master/llod-cloud.png)
 
 
 Requirements
