@@ -60,7 +60,7 @@ for dataset in datasets:
   for kv in dsJSON["result"]["extras"]:
     if(re.match("links:.*",kv["key"])):
       target = kv["key"][6:]
-      s = float(kv["value"][1:(len(kv["value"])-1)])
+      s = float(kv["value"][0:(len(kv["value"]))])
       print(dataset + " => " + target + ": weight " + kv["value"])
       if target in nodes.keys():
         nodes[dataset]["links"][target] = s

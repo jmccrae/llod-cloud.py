@@ -34,7 +34,7 @@ for dataset in data.keys():
     edgesize[e] = edgeBaseSize * s
   if "triples" in data[dataset].keys():
     s = float(data[dataset]["triples"])
-    s = vertexBaseSize * math.pow(math.log10(s),0.4)
+    s = vertexBaseSize * math.pow(math.log10(s+1)+1,0.4)
     size[nodes[dataset]] = s
 
 pos = arf_layout(g,a=5)
