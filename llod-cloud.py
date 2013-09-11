@@ -37,9 +37,9 @@ for dataset in data.keys():
     s = vertexBaseSize * math.pow(math.log10(s+1)+1,0.4)
     size[nodes[dataset]] = s
 
-pos = arf_layout(g,a=5)
-
-cairo_draw(g,pos,ctx,vertex_text=label, vertex_size=size, vertex_pen_width=1.0, vertex_font_size=40,vertex_fill_color=[.67,.84,.90,1.0], vertex_text_color="black",vertex_text_position=-2, edge_pen_width=edgesize, edge_marker_size=40,fit_view=True)
+pos = sfdp_layout(g,p=7)
+# .67 .84 .90
+cairo_draw(g,pos,ctx,vertex_text=label, vertex_size=size, vertex_pen_width=8.0, vertex_color=[0.2,0.2,0.9,1.0], vertex_font_size=52,vertex_fill_color=[1.0,1.0,1.0,1.0], vertex_text_color="black",vertex_text_position=-2, edge_pen_width=edgesize, edge_marker_size=40,fit_view=True,vertex_font_family="sans",vertex_font_weight=cairo.FONT_WEIGHT_BOLD)
 
 ctx.move_to(canvas*0.02,canvas*0.95)
 ctx.set_font_size(72)

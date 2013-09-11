@@ -1,23 +1,70 @@
 {
+    "dbpedia-ko": {
+        "edgecount": 1, 
+        "links": {}
+    }, 
+    "data-bnf-fr": {
+        "triples": "33000", 
+        "edgecount": 0, 
+        "links": {}
+    }, 
+    "parole-simple-ont": {
+        "triples": "027", 
+        "edgecount": 1, 
+        "links": {
+            "lexinfo": 394.0
+        }
+    }, 
+    "dbpedia-cs": {
+        "edgecount": 1, 
+        "links": {}
+    }, 
     "gold": {
         "edgecount": 1, 
         "links": {}
     }, 
+    "simple": {
+        "triples": "0567", 
+        "edgecount": 0, 
+        "links": {}
+    }, 
+    "asjp": {
+        "triples": "00000", 
+        "edgecount": 1, 
+        "links": {
+            "lexvo": 5000.0
+        }
+    }, 
     "wals": {
         "triples": "0000", 
-        "edgecount": 6, 
+        "edgecount": 5, 
         "links": {
-            "lexvo": 3000.0, 
-            "glottolog-langdoc": 3000.0
+            "lexvo": 3000.0
+        }
+    }, 
+    "semanticquran": {
+        "triples": "574139", 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 7718.0
         }
     }, 
     "dbpedia-el": {
         "triples": "39989", 
-        "edgecount": 4, 
+        "edgecount": 5, 
         "links": {
             "yago": 28778.0, 
             "opencyc": 4117.0, 
             "dbpedia": 45000.0
+        }
+    }, 
+    "ids": {
+        "triples": "00000", 
+        "edgecount": 4, 
+        "links": {
+            "wals": 216.0, 
+            "wiktionary-dbpedia-org": 1832.0, 
+            "lexvo": 217.0
         }
     }, 
     "jrc-names": {
@@ -27,18 +74,20 @@
             "dbpedia": 124651.0
         }
     }, 
-    "parole-simple-ont": {
-        "triples": "027", 
+    "dbpedia-es": {
         "edgecount": 1, 
-        "links": {
-            "lexinfo": 394.0
-        }
+        "links": {}
     }, 
     "wiktionary-dbpedia-org": {
         "edgecount": 5, 
         "links": {
             "dbpedia": 25155.0
         }
+    }, 
+    "bluk-bnb": {
+        "triples": "973361", 
+        "edgecount": 0, 
+        "links": {}
     }, 
     "vu-wordnet": {
         "triples": "57374", 
@@ -56,15 +105,8 @@
         }
     }, 
     "dbpedia-it": {
-        "edgecount": 1, 
+        "edgecount": 2, 
         "links": {}
-    }, 
-    "ontos-news-portal": {
-        "triples": "67796", 
-        "edgecount": 1, 
-        "links": {
-            "dbpedia": 6935.0
-        }
     }, 
     "lemonwordnet": {
         "triples": "49338", 
@@ -77,19 +119,25 @@
         "edgecount": 3, 
         "links": {}
     }, 
+    "ontos-news-portal": {
+        "triples": "67796", 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 6935.0
+        }
+    }, 
     "mlsa": {
         "triples": "100", 
-        "edgecount": 4, 
+        "edgecount": 3, 
         "links": {
             "wals": 2373.0, 
-            "lexvo": 2373.0, 
             "wiktionary-dbpedia-org": 1371.0, 
-            "glottolog-langdoc": 2373.0
+            "lexvo": 2373.0
         }
     }, 
     "dbpedia": {
         "triples": "20000000", 
-        "edgecount": 22, 
+        "edgecount": 25, 
         "links": {
             "yago": 18100000.0, 
             "opencyc": 20362.0
@@ -109,11 +157,39 @@
             "dbpedia": 691.0
         }
     }, 
+    "lodac-bdls": {
+        "triples": "76496", 
+        "edgecount": 2, 
+        "links": {
+            "dbpedia-ja": 7367.0, 
+            "dbpedia": 18545.0
+        }
+    }, 
+    "fao-geopolitical-ontology": {
+        "triples": "249", 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 195.0
+        }
+    }, 
     "asit": {
         "edgecount": 1, 
         "links": {
             "dbpedia": 130.0
         }
+    }, 
+    "dbpedia-live": {
+        "edgecount": 0, 
+        "links": {}
+    }, 
+    "dbpedia-ru": {
+        "edgecount": 1, 
+        "links": {}
+    }, 
+    "core": {
+        "triples": "0152671", 
+        "edgecount": 0, 
+        "links": {}
     }, 
     "yago": {
         "triples": "2000000", 
@@ -138,11 +214,28 @@
         }
     }, 
     "dbpedia-de": {
-        "edgecount": 1, 
+        "edgecount": 2, 
         "links": {}
     }, 
     "dbpedia-ja": {
-        "edgecount": 1, 
+        "triples": "079037", 
+        "edgecount": 13, 
+        "links": {
+            "dbpedia-ko": 148988.0, 
+            "dbpedia-it": 218736.0, 
+            "dbpedia-pl": 192975.0, 
+            "dbpedia-cs": 101868.0, 
+            "dbpedia-de": 245530.0, 
+            "dbpedia-el": 38115.0, 
+            "dbpedia-es": 210754.0, 
+            "dbpedia": 421893.0, 
+            "dbpedia-ru": 210254.0, 
+            "dbpedia-fr": 267194.0, 
+            "dbpedia-pt": 190044.0
+        }
+    }, 
+    "eurovoc-in-skos": {
+        "edgecount": 0, 
         "links": {}
     }, 
     "lemonwiktionary": {
@@ -157,11 +250,11 @@
         "edgecount": 4, 
         "links": {}
     }, 
-    "glottolog-langdoc": {
-        "triples": "000000", 
-        "edgecount": 5, 
+    "geowordnet": {
+        "triples": "339096", 
+        "edgecount": 1, 
         "links": {
-            "lexvo": 7000.0
+            "vu-wordnet": 2054873.0
         }
     }, 
     "zhishi-me": {
@@ -171,12 +264,13 @@
             "dbpedia": 193000.0
         }
     }, 
-    "marc-codes": {
-        "triples": "81", 
-        "edgecount": 2, 
+    "ietflang": {
+        "triples": "0000", 
+        "edgecount": 3, 
         "links": {
-            "dbpedia": 599.0, 
-            "lingvoj": 421.0
+            "wals": 10000.0, 
+            "ids": 10000.0, 
+            "lexvo": 10000.0
         }
     }, 
     "lemonuby": {
@@ -193,24 +287,18 @@
         "edgecount": 1, 
         "links": {}
     }, 
+    "lcc": {
+        "edgecount": 0, 
+        "links": {}
+    }, 
     "dbpedia-fr": {
         "triples": "3100000", 
-        "edgecount": 5, 
+        "edgecount": 6, 
         "links": {
             "dbpedia-nl": 402443.0, 
             "dbpedia-it": 474524.0, 
             "dbpedia": 854635.0, 
             "dbpedia-ja": 224710.0
-        }
-    }, 
-    "ietflang": {
-        "triples": "0000", 
-        "edgecount": 4, 
-        "links": {
-            "wals": 10000.0, 
-            "lexvo": 10000.0, 
-            "ids": 10000.0, 
-            "glottolog-langdoc": 10000.0
         }
     }, 
     "bible-ontology": {
@@ -220,12 +308,10 @@
             "dbpedia": 371.0
         }
     }, 
-    "fao-geopolitical-ontology": {
-        "triples": "249", 
-        "edgecount": 1, 
-        "links": {
-            "dbpedia": 195.0
-        }
+    "open-library": {
+        "triples": "0000000", 
+        "edgecount": 0, 
+        "links": {}
     }, 
     "de-gaap-ontology-lexicon": {
         "edgecount": 1, 
@@ -249,11 +335,23 @@
             "lexinfo": 1057422.0
         }
     }, 
-    "geowordnet": {
-        "triples": "339096", 
+    "marc-codes": {
+        "triples": "81", 
+        "edgecount": 2, 
+        "links": {
+            "dbpedia": 599.0, 
+            "lingvoj": 421.0
+        }
+    }, 
+    "dbpedia-pl": {
+        "edgecount": 1, 
+        "links": {}
+    }, 
+    "glottolog": {
+        "triples": "000000", 
         "edgecount": 1, 
         "links": {
-            "vu-wordnet": 2054873.0
+            "lexvo": 7000.0
         }
     }, 
     "gemet": {
@@ -272,15 +370,10 @@
             "lingvoj": 38.0
         }
     }, 
-    "ids": {
-        "triples": "00000", 
-        "edgecount": 5, 
-        "links": {
-            "wals": 216.0, 
-            "lexvo": 217.0, 
-            "wiktionary-dbpedia-org": 1832.0, 
-            "glottolog-langdoc": 216.0
-        }
+    "sentiws": {
+        "triples": "033", 
+        "edgecount": 0, 
+        "links": {}
     }, 
     "dbpedia-nl": {
         "triples": "967401", 
@@ -296,19 +389,17 @@
             "dbpedia-pt": 303833.0
         }
     }, 
-    "dbpedia-pt": {
-        "triples": "460733", 
-        "edgecount": 2, 
-        "links": {
-            "dbpedia": 365839.0
-        }
-    }, 
     "lexinfo": {
         "triples": "37", 
         "edgecount": 6, 
         "links": {
             "isocat": 359.0
         }
+    }, 
+    "heartfailure": {
+        "triples": "370", 
+        "edgecount": 0, 
+        "links": {}
     }, 
     "lingvoj": {
         "triples": "244", 
@@ -318,11 +409,11 @@
             "lexvo": 510.0
         }
     }, 
-    "asjp": {
-        "triples": "00000", 
-        "edgecount": 1, 
+    "dbpedia-pt": {
+        "triples": "460733", 
+        "edgecount": 3, 
         "links": {
-            "lexvo": 5000.0
+            "dbpedia": 365839.0
         }
     }, 
     "olia": {
@@ -332,5 +423,13 @@
             "isocat": 361.0, 
             "gold": 264.0
         }
+    }, 
+    "rosetta-project": {
+        "edgecount": 0, 
+        "links": {}
+    }, 
+    "gemet-annotated": {
+        "edgecount": 0, 
+        "links": {}
     }
 }

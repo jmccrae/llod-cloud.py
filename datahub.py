@@ -12,28 +12,29 @@ blacklist = ['apertium', # not rdf
 'xwn', # not rdf
 'talkbank', # not rdf
 'french-timebank', # not rdf
-'semanticquran', # down
 'jmdict', # not rdf
 'multext-east', # not rdf
-'openlibrary', # down
 'cosmetic-surgeon-wearing-nursing-scrubs-nursing-uniforms-expert-scrubs-for-safety', # spam?
 'pali-english-lexicon', # down
 'printed-book-auction-catalogues', # down
 'wikiword_thesaurus', # not rdf
 'eu-dgt-tm', # not rdf
 'masc', # rdf export... not linked data
-'eurovoc-in-skos', # down
 'multilingualeulaw', # not rdf
 'wiktionary', # not rdf
 'omegawiki', # not rdf
-'lcc', # down
 'framenet', # not rdf
-'sentiws', # down
 'o-anc', # not rdf
 'conceptnet', # not rdf
 'phoible', # not rdf
 'dbpedia-spotlight', # tool not data!
-'opus' # not rdf
+'opus', # not rdf
+'ss', # spam
+'cgsddforja', # spam
+'sqxfetge', # spam
+'fafqwfaf', # spam
+'sqxfetgea', # spam
+'analisi-del-blog-http-www-beppegrillo-it' # spam
 ]
 
 def ckanListDatasetsInGroup(group):
@@ -71,9 +72,9 @@ for dataset in datasets:
     if(kv["key"] == "triples"):
       nodes[dataset]["triples"] = kv["value"][1:(len(kv["value"])-1)]
 
-for v in nodes.keys():
-  if(nodes[v]["edgecount"] == 0):
-    del nodes[v]
+#for v in nodes.keys():
+#  if(nodes[v]["edgecount"] == 0):
+#    del nodes[v]
 
 with open("llod-cloud.json","w") as outfile:
   json.dump(nodes,outfile,indent=4)
