@@ -57,6 +57,8 @@ for dataset in datasets:
 for dataset in datasets:
   print("Dataset:" + dataset)
   dsJSON = ckanDataset(dataset)
+  nodes[dataset]["url"] = baseURL + "package_show?id=" + dataset
+  nodes[dataset]["name"] = dsJSON["result"]["title"]
   nodes[dataset]["links"] = {}
   for kv in dsJSON["result"]["extras"]:
     if(re.match("links:.*",kv["key"])):
