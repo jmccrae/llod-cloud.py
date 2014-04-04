@@ -87,12 +87,13 @@ for dataset in data.keys():
 	src = dataset.encode("ascii","ignore")
 	if "links" in data[dataset].keys():
 		for target,wt in data[dataset]["links"].items():
-			s = math.log10(float(wt))
-			tgt = target.encode("ascii","ignore")
-			edgesize = edgeBaseSize * s
-			id='e'+str(nr)
-			nr = nr+1
-			graphml.write('\
+			if target in data.keys():
+				s = math.log10(float(wt))
+				tgt = target.encode("ascii","ignore")
+				edgesize = edgeBaseSize * s
+				id='e'+str(nr)
+				nr = nr+1
+				graphml.write('\
     <edge id="'+id+'" source="'+src+'" target="'+tgt+'">\n\
       <data key="d9">\n\
         <y:PolyLineEdge>\n\

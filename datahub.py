@@ -55,15 +55,31 @@ def ckanListDatasetsInGroup(group):
   url = baseURL + "group_show?id=" + group
   return json.loads(urllib2.urlopen(url).read())
 
+def ckanListDatasetsForTag(tag):
+  url = baseURL + "tag_show?id=" + tag
+  return json.loads(urllib2.urlopen(url).read())
+  
 def ckanDataset(dataset):
   url = baseURL + "package_show?id=" + dataset
   return json.loads(urllib2.urlopen(url).read())
 
 nodes = {}
 
+# NEW: check not only group data sets, but everything with a corresponding tag
+
 datasetJSON = ckanListDatasetsInGroup("linguistics")
-datasets = [ds["name"] for ds in datasetJSON["result"]["packages"]]
+datasets = [ds["name"] for ds in datasetJSON["result"]["packages"]]	
+print "group 'linguistics': "+str(len(datasets))+" datasets"
+for tag in ["llod", "linguistics%20lod", "lexicon", "corpus", "thesaurus", "isocat", "linguistic", "linguistics", "typology"]:
+	 newDatasetJSON = ckanListDatasetsForTag (tag)
+	 newDatasets = [ds["name"] for ds in newDatasetJSON["result"]["packages"]]
+	 datasets = datasets + newDatasets
+	 datasets = list(set(datasets))
+	 print "+ tag '"+tag+"': "+str(len(datasets))+" datasets"
+		
 datasets = set(datasets) - set(blacklist)
+print "- blacklist: "+str(len(datasets))+" datasets"
+
 for dataset in datasets:
   nodes[dataset] = {}
   nodes[dataset]["edgecount"] = 0
@@ -81,49 +97,65 @@ for dataset in datasets:
   nodes[dataset]["rdf_owl"] = 0
    
   # check whether URLs given are alive
-  try: urllib2.urlopen(urllib2.Request(dsJSON["result"]["url"]))
-  except HTTPError as e:
-    print "HTTPError "+str(e.code)+" while trying to access "+dsJSON["result"]["url"]
-    nodes[dataset]["deadurls"] += 1
-  except ValueError:
-    try: urllib2.urlopen(urllib2.Request("http://"+dsJSON["result"]["url"]))
-    except HTTPError as e1:
-      print "HTTPError "+str(e1.code)+" while trying to access "+dsJSON["result"]["url"]
-      nodes[dataset]["deadurls"] += 1
-    except URLError as e1:
-	  print "URLError "+e1.reason+" while trying to access "+dsJSON["result"]["url"]
-	  nodes[dataset]["deadurls"] += 1
-    else: nodes[dataset]["aliveurls"] += 1
-  except URLError as e:
-    print "URLError "+e.reason+" while trying to access "+dsJSON["result"]["url"]
-    nodes[dataset]["deadurls"] += 1
-  else: nodes[dataset]["aliveurls"] += 1
-  
-  for res in dsJSON["result"]["resources"]:
-    try: urllib2.urlopen(urllib2.Request(res["url"]))
+  try:
+    try: urllib2.urlopen(urllib2.Request(dsJSON["result"]["url"]))
     except HTTPError as e:
-      print "HTTPError "+str(e.code)+" while trying to access "+res["url"]
+      print "HTTPError "+str(e.code)+" while trying to access "+dsJSON["result"]["url"]
       nodes[dataset]["deadurls"] += 1
     except ValueError:
-      try: urllib2.urlopen(urllib2.Request("http://"+res["url"]))
+      try: urllib2.urlopen(urllib2.Request("http://"+dsJSON["result"]["url"]))
       except HTTPError as e1:
-        print "HTTPError "+str(e1.code)+" while trying to access "+res["url"]
+        print "HTTPError "+str(e1.code)+" while trying to access "+dsJSON["result"]["url"]
         nodes[dataset]["deadurls"] += 1
       except URLError as e1:
-        print "HTTPError "+e1.reason+" while trying to access "+res["url"]
+        print "URLError "+e1.reason+" while trying to access "+dsJSON["result"]["url"]
         nodes[dataset]["deadurls"] += 1
       else: nodes[dataset]["aliveurls"] += 1
     except URLError as e:
-      print "URLError "+e.reason+" while trying to access "+res["url"]
+      try: print "URLError "+e.reason+" while trying to access "+dsJSON["result"]["url"]
+      except TypeError:
+        print "URLError"
+      nodes[dataset]["deadurls"] += 1
+    except AttributeError as e:
+      print "AttributeError"
       nodes[dataset]["deadurls"] += 1
     else: nodes[dataset]["aliveurls"] += 1
+  except TypeError:
+    print "Error"
+
+  for res in dsJSON["result"]["resources"]:
+    try:
+      try: urllib2.urlopen(urllib2.Request(res["url"]))
+      except HTTPError as e:
+        print "HTTPError "+str(e.code)+" while trying to access "+res["url"]
+        nodes[dataset]["deadurls"] += 1
+      except ValueError:
+        try: urllib2.urlopen(urllib2.Request("http://"+res["url"]))
+        except HTTPError as e1:
+          print "HTTPError "+str(e1.code)+" while trying to access "+res["url"]
+          nodes[dataset]["deadurls"] += 1
+        except URLError as e1:
+          print "HTTPError "+e1.reason+" while trying to access "+res["url"]
+          nodes[dataset]["deadurls"] += 1
+        else: nodes[dataset]["aliveurls"] += 1
+      except URLError as e:
+        try: print "URLError "+e.reason+" while trying to access "+res["url"]
+        except TypeError:
+           print "URLError"	  
+        nodes[dataset]["deadurls"] += 1
+      else: nodes[dataset]["aliveurls"] += 1
+    except TypeError:
+      print "Error"
   print("alive: " +str(nodes[dataset]["aliveurls"])+"/"+str(nodes[dataset]["aliveurls"]+nodes[dataset]["deadurls"]))
+	
 	 
   # count links
   for kv in dsJSON["result"]["extras"]:
     if(re.match("links:.*",kv["key"])):
       target = kv["key"][6:]
-      s = float(kv["value"][0:(len(kv["value"]))])
+      try: s = float(kv["value"][0:(len(kv["value"]))])
+      except ValueError:
+        s=50; # default: assume 50 links
       print(dataset + " => " + target + ": weight " + kv["value"])
       if target in nodes.keys():
         nodes[dataset]["links"][target] = s
