@@ -8,6 +8,7 @@ import datetime
 # we write directly GraphML as manually produced by yEd, but perform no positioning
 # for automated positioning, open the file, e.g., in yEd, and generate a proper layout, (e.g., yEd's "organic")
 
+
 edgeBaseSize=3
 vertexBaseSize=100
 canvas=4000
@@ -49,13 +50,89 @@ for dataset in data.keys():
 		#	label=re.sub("([a-z])([A-Z])","\1\n\2",label)
 
 	color = "#FFFFFF"
-	if "type" in data[dataset].keys():
-		if data[dataset]["type"]=='lexicon':
-			color='#CCFFCC'
-		if data[dataset]["type"]=='corpus':
-			color='#99CCFF'
-		if data[dataset]["type"]=='language_description':
-			color='#FFCC99'
+
+	# LDL-2013:
+	# if "type" in data[dataset].keys():
+		# if data[dataset]["type"]=='lexicon':
+			# color='#CCFFCC'
+		# if data[dataset]["type"]=='corpus':
+			# color='#99CCFF'
+		# if data[dataset]["type"]=='language_description':
+			# color='#FFCC99'
+	
+	# LDL-2014:
+	type = "unknown"
+	if "tags" in data[dataset].keys():
+		# language description
+		type = "meta"
+
+
+	name_plus_tags = ""
+	if "name" in data[dataset].keys(): name_plus_tags = data[dataset]["name"].encode("utf-8")
+	name_plus_tags=name_plus_tags+" ["
+	if "tags" in data[dataset].keys(): 
+		for i in data[dataset]["tags"]:
+			name_plus_tags = name_plus_tags+" \""+i.encode('utf-8')+"\""
+	name_plus_tags = name_plus_tags+" ]"
+	name_plus_tags = name_plus_tags.lower()
+
+	if 'lexicon' in name_plus_tags:
+		type="lexicon.lexicon"
+	if 'lexical-resources' in name_plus_tags:
+		type="lexicon.lexicon"
+	
+	if name_plus_tags.find("typology")!=-1:
+		type="meta.db"
+	if "name" in data[dataset].keys(): 
+		if data[dataset]["name"].encode("utf-8").lower().find("dbpedia")!=-1: type="lexicon.generalKB"
+		if data[dataset]["name"].encode("utf-8").lower().find("ontos")!=-1: type="lexicon.generalKB"
+		if data[dataset]["name"].encode("utf-8").lower().find("asit")!=-1: type="lexicon.generalKB"
+		if data[dataset]["name"].encode("utf-8").lower().find("heart failure")!=-1: type="lexicon.generalKB"
+		if data[dataset]["name"].encode("utf-8").lower().find("zhishi.me")!=-1: type="lexicon.generalKB"
+	if name_plus_tags.find("dbpedia")!=-1: type="lexicon.generalKB"
+	if name_plus_tags.find("yago")!=-1: type="lexicon.generalKB"
+	if name_plus_tags.find("thesaurus")!=-1: type="lexicon.generalKB"
+	if name_plus_tags.find("vocab-mappings")!=-1: type="lexicon.generalKB"
+	if name_plus_tags.find("wiktionary")!=-1: type="lexicon.lexicon"
+	if name_plus_tags.find("sentiment")!=-1: type="lexicon.lexicon"
+	if name_plus_tags.find("lemon")!=-1: type="lexicon.lexicon"
+	if name_plus_tags.find("isocat")!=-1: type="meta.term" 
+	if name_plus_tags.find("biblio")!=-1: type="meta.bib"
+	if name_plus_tags.find("general ontology of linguistic description")!=-1: type="meta.term"
+	if name_plus_tags.find("corpus")!=-1: type="corpus"
+	if name_plus_tags.find("treebank")!=-1: type="corpus"
+	if name_plus_tags.find("corpora")!=-1: type="corpus"
+	if name_plus_tags.find("semanticquran")!=-1: type="corpus"
+	if name_plus_tags.find("wordnet")!=-1: type="lexicon.lexicon"
+	if "name" in data[dataset].keys(): 
+		if data[dataset]["name"].encode("utf-8").lower().find("olia")!=-1: type="meta.term"
+		if data[dataset]["name"].encode("utf-8").lower().find("lingvoj")!=-1: type="meta.term"
+		if data[dataset]["name"].encode("utf-8").lower().find("gemet")!=-1: type="lexicon.generalKB"
+		if data[dataset]["name"].encode("utf-8").lower()=="simple": type="lexicon.lexicon"
+		if data[dataset]["name"].encode("utf-8").lower().find("lexicon")!=-1: type="lexicon.lexicon"
+		if data[dataset]["name"].encode("utf-8").lower().find("the speech accent archive")!=-1: type="corpus"
+		if data[dataset]["name"].encode("utf-8").lower().find("lexvo")!=-1: type="meta.term"
+		if data[dataset]["name"].encode("utf-8").lower().find("lexinfo")!=-1: type="meta.term"
+		if data[dataset]["name"].encode("utf-8").lower().find("glottolog")!=-1: type="meta.db"
+		if data[dataset]["name"].encode("utf-8").lower().find("automated similarity judgment program lexical data")!=-1: type="meta.db"
+		if data[dataset]["name"].encode("utf-8").lower().find("ietflang")!=-1: type="meta.term"
+		if data[dataset]["name"].encode("utf-8").lower().find("intercontinental dictionary series")!=-1: type="lexicon.lexicon"
+		if data[dataset]["name"].encode("utf-8").lower().find("yleinen suomalainen asiasanasto")!=-1: type="lexicon.generalKB"
+		if data[dataset]["name"].encode("utf-8").lower().find("jrc-name")!=-1: type="lexicon.generalKB"
+		if data[dataset]["name"].encode("utf-8").lower().find("world atlas of language structuctures")!=-1: type="meta.db"
+		if data[dataset]["name"].encode("utf-8").lower().find("world loanword database")!=-1: type="lexicon.lexicon"
+	
+	print name_plus_tags+" --> "+type
+			
+	# html color codes: http://html-color-codes.info/
+	if type == "meta": color='#FFCC99'				# default
+	if type == "meta.db": color='#C2966A'			# darker
+	if type == "meta.term": color='#FFA74E'			# more intense
+	if type == "meta.bib": color='#FFE6CB'			# brighter
+	if type == "lexicon": color='#CCFFCC'			# default
+	if type == "lexicon.lexicon": color='#8BFF8B'	# more intense
+	if type == "lexicon.generalKB": color='#EEFFEE' # brighter
+	if type == "corpus": color='#99CCFF'
 	
 	size = vertexBaseSize
 	if "triples" in data[dataset].keys():
