@@ -90,11 +90,14 @@ for dataset in datasets:
   nodes[dataset]["url"] = baseURL + "package_show?id=" + dataset
   nodes[dataset]["name"] = dsJSON["result"]["title"]
   nodes[dataset]["links"] = {}
-
+  nodes[dataset]["tags"] = []
   nodes[dataset]["aliveurls"] = 0
   nodes[dataset]["deadurls"] = 0
   nodes[dataset]["formats"] = 0
   nodes[dataset]["rdf_owl"] = 0
+   
+  for tag in dsJSON["result"]["tags"]:
+    nodes[dataset]["tags"].extend([tag["name"]])
    
   # check whether URLs given are alive
   try:
@@ -166,14 +169,14 @@ for dataset in datasets:
     if(kv["key"] == "triples"):
       nodes[dataset]["triples"] = kv["value"][1:(len(kv["value"])-1)]
 
-  # for debugging only
+  # for debugging only (final dump at the end)
   with open("llod-cloud.json","w") as outfile:
     json.dump(nodes,outfile,indent=4)
 	  
-# we do NOT exclude unlinked data sets (at the moment)
-#for v in nodes.keys():
-#  if(nodes[v]["edgecount"] == 0):
-#    del nodes[v]
+# since LDL-2014, we exclude unlinked data sets
+for v in nodes.keys():
+  if(nodes[v]["edgecount"] == 0):
+    del nodes[v]
 
 # we exclude everything that's totally down
 for v in nodes.keys():
