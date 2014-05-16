@@ -23,5 +23,16 @@ Download the data using
 
 Generate the graph with
 
-    python llod-cloud.py
+    python llod-cloud.graphml.py 
 
+Load the resulting graph with yed 
+
+	generate "organic" layout
+	reformat manually
+	export to SVG
+	
+Fix SVG export: move edges to the background
+
+	xsltproc fixGraphmlSVG.xsl FILEin.svg > FILEout.svg
+
+The modified SVG is the "official" diagram

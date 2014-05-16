@@ -141,6 +141,7 @@ for dataset in data.keys():
 
 		graphml.write('\
 		<node id="'+id+'">\n\
+		  <data key="d4"><![CDATA['+data[dataset]["url"]+']></data>\
 		  <data key="d6">\n\
 			<y:ShapeNode>\n\
 			  <y:Geometry height="'+str(size)+'" width="'+str(size)+'"/>\n\

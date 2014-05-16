@@ -123,7 +123,7 @@ for dataset in datasets:
       print "AttributeError"
       nodes[dataset]["deadurls"] += 1
     else: nodes[dataset]["aliveurls"] += 1
-  except TypeError:
+  except Error:
     print "Error"
 
   for res in dsJSON["result"]["resources"]:
