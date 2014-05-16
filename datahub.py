@@ -70,7 +70,7 @@ nodes = {}
 datasetJSON = ckanListDatasetsInGroup("linguistics")
 datasets = [ds["name"] for ds in datasetJSON["result"]["packages"]]	
 print "group 'linguistics': "+str(len(datasets))+" datasets"
-for tag in ["llod", "linguistics%20lod", "lexicon", "corpus", "thesaurus", "isocat", "linguistic", "linguistics", "typology"]:
+for tag in ["llod", "linguistics%20lod", "lexicon", "corpus", "thesaurus", "isocat", "linguistic", "linguistics", "typology", "lrec-2014"]:
 	 newDatasetJSON = ckanListDatasetsForTag (tag)
 	 newDatasets = [ds["name"] for ds in newDatasetJSON["result"]["packages"]]
 	 datasets = datasets + newDatasets
