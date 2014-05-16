@@ -139,48 +139,50 @@ for dataset in data.keys():
 		size = float(data[dataset]["triples"])
 		size = vertexBaseSize * math.pow(math.log10(size+1)+1,0.4)
 
-	graphml.write('\
-	<node id="'+id+'">\n\
-      <data key="d6">\n\
-        <y:ShapeNode>\n\
-          <y:Geometry height="'+str(size)+'" width="'+str(size)+'"/>\n\
-          <y:Fill color="'+color+'" transparent="false"/>\n\
-          <y:BorderStyle color="#2222CC" type="line" width="1.0"/>\n\
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Sans" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="53.00390625" modelName="custom" textColor="#000000" visible="true" width="81.841796875">'+label.encode("ascii","ignore")+'<y:LabelModel>\n\
-              <y:SmartNodeLabelModel distance="4.0"/>\n\
-            </y:LabelModel>\n\
-            <y:ModelParameter>\n\
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>\n\
-            </y:ModelParameter>\n\
-          </y:NodeLabel>\n\
-          <y:Shape type="ellipse"/>\n\
-        </y:ShapeNode>\n\
-      </data>\n\
-    </node>\n')
+		graphml.write('\
+		<node id="'+id+'">\n\
+		  <data key="d6">\n\
+			<y:ShapeNode>\n\
+			  <y:Geometry height="'+str(size)+'" width="'+str(size)+'"/>\n\
+			  <y:Fill color="'+color+'" transparent="false"/>\n\
+			  <y:BorderStyle color="#2222CC" type="line" width="1.0"/>\n\
+			  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Sans" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="53.00390625" modelName="custom" textColor="#000000" visible="true" width="81.841796875">'+label.encode("ascii","ignore")+'<y:LabelModel>\n\
+				  <y:SmartNodeLabelModel distance="4.0"/>\n\
+				</y:LabelModel>\n\
+				<y:ModelParameter>\n\
+				  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>\n\
+				</y:ModelParameter>\n\
+			  </y:NodeLabel>\n\
+			  <y:Shape type="ellipse"/>\n\
+			</y:ShapeNode>\n\
+		  </data>\n\
+		</node>\n')
 
 # write edges
 nr = 0
 for dataset in data.keys():
 	src = dataset.encode("ascii","ignore")
-	if "links" in data[dataset].keys():
-		for target,wt in data[dataset]["links"].items():
-			if target in data.keys():
-				s = math.log10(float(wt))
-				tgt = target.encode("ascii","ignore")
-				edgesize = edgeBaseSize * s
-				id='e'+str(nr)
-				nr = nr+1
-				graphml.write('\
-    <edge id="'+id+'" source="'+src+'" target="'+tgt+'">\n\
-      <data key="d9">\n\
-        <y:PolyLineEdge>\n\
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>\n\
-          <y:LineStyle color="#AAAAAA" type="line" width="'+str(edgesize)+'"/>\n\
-          <y:Arrows source="none" target="standard"/>\n\
-          <y:BendStyle smoothed="false"/>\n\
-        </y:PolyLineEdge>\n\
-      </data>\n\
-    </edge>\n')
+	if "triples" in data[dataset].keys()
+		if "links" in data[dataset].keys():
+			for target,wt in data[dataset]["links"].items():
+				if "triples" in data[target].keys()
+					if target in data.keys():
+						s = math.log10(float(wt))
+						tgt = target.encode("ascii","ignore")
+						edgesize = edgeBaseSize * s
+						id='e'+str(nr)
+						nr = nr+1
+						graphml.write('\
+			<edge id="'+id+'" source="'+src+'" target="'+tgt+'">\n\
+			  <data key="d9">\n\
+				<y:PolyLineEdge>\n\
+				  <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>\n\
+				  <y:LineStyle color="#AAAAAA" type="line" width="'+str(edgesize)+'"/>\n\
+				  <y:Arrows source="none" target="standard"/>\n\
+				  <y:BendStyle smoothed="false"/>\n\
+				</y:PolyLineEdge>\n\
+			  </data>\n\
+			</edge>\n')
 
 # finalize file
 graphml.write('</graph>\
