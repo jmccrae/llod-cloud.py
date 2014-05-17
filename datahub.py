@@ -63,9 +63,9 @@ nodes = {}
 
 # NEW: check not only group data sets, but everything with a corresponding tag
 
-datasetJSON = ckanListDatasetsInGroup("linguistics")
+datasetJSON = ckanListDatasetsInGroup("owlg")
 datasets = [ds["name"] for ds in datasetJSON["result"]["packages"]]	
-print "group 'linguistics': "+str(len(datasets))+" datasets"
+print "group 'owlg': "+str(len(datasets))+" datasets"
 for tag in ["llod", "linguistics%20lod", "lexicon", "corpus", "thesaurus", "isocat", "linguistic", "linguistics", "typology", "lrec-2014"]:
 	 newDatasetJSON = ckanListDatasetsForTag (tag)
 	 newDatasets = [ds["name"] for ds in newDatasetJSON["result"]["packages"]]
