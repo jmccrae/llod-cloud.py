@@ -122,6 +122,7 @@ for dataset in data.keys():
 		if data[dataset]["name"].encode("utf-8").lower().find("jrc-name")!=-1: type="lexicon.generalKB"
 		if data[dataset]["name"].encode("utf-8").lower().find("world atlas of language structuctures")!=-1: type="meta.db"
 		if data[dataset]["name"].encode("utf-8").lower().find("world loanword database")!=-1: type="lexicon.lexicon"
+		if data[dataset]["name"].encode("utf-8").lower().find("gold")!=-1: type="meta.term"
 	
 	print name_plus_tags+" --> "+type
 			

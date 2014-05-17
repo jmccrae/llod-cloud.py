@@ -21,6 +21,18 @@
         "rdf_owl": 0, 
         "name": "DBpedia in Czech"
     }, 
+    "gold": {
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {}, 
+        "tags": [], 
+        "url": "http://datahub.io/api/3/action/package_show?id=gold", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "00", 
+        "name": "General Ontology of Linguistic Description"
+    }, 
     "pdev-lemon": {
         "deadurls": 1, 
         "edgecount": 1, 
@@ -63,7 +75,7 @@
         "name": "LemonWordNet"
     }, 
     "clean-energy-data-reegle": {
-        "deadurls": 1, 
+        "deadurls": 0, 
         "edgecount": 1, 
         "links": {
             "dbpedia": 330.0
@@ -84,7 +96,7 @@
             "void-sparql-endpoint"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=clean-energy-data-reegle", 
-        "aliveurls": 13, 
+        "aliveurls": 14, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "3404", 
@@ -225,7 +237,7 @@
             "wikipedia"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=dbpedia-ja", 
-        "aliveurls": 2, 
+        "aliveurls": 3, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "079037", 
@@ -768,9 +780,10 @@
     }, 
     "olia": {
         "deadurls": 0, 
-        "edgecount": 4, 
+        "edgecount": 5, 
         "links": {
-            "isocat": 361.0
+            "isocat": 361.0, 
+            "gold": 264.0
         }, 
         "tags": [
             "annotation", 
@@ -821,7 +834,7 @@
         "name": "AGROVOC "
     }, 
     "environmental-applications-reference-thesaurus": {
-        "deadurls": 0, 
+        "deadurls": 1, 
         "edgecount": 5, 
         "links": {
             "umthes": 2970.0, 
@@ -846,7 +859,7 @@
             "void-sparql-endpoint"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=environmental-applications-reference-thesaurus", 
-        "aliveurls": 5, 
+        "aliveurls": 4, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "3331", 
@@ -1117,7 +1130,7 @@
         "name": "ALPINO RDF Treebank"
     }, 
     "socialsemweb-thesaurus": {
-        "deadurls": 1, 
+        "deadurls": 2, 
         "edgecount": 1, 
         "links": {
             "dbpedia": 300.0
@@ -1138,7 +1151,7 @@
             "usergeneratedcontent"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=socialsemweb-thesaurus", 
-        "aliveurls": 4, 
+        "aliveurls": 3, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "000", 
@@ -1656,7 +1669,7 @@
         "name": "linked hypernyms"
     }, 
     "wold": {
-        "deadurls": 1, 
+        "deadurls": 2, 
         "edgecount": 2, 
         "links": {
             "dbpedia": 16362.0, 
@@ -1680,7 +1693,7 @@
             "typology"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=wold", 
-        "aliveurls": 6, 
+        "aliveurls": 5, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "00000", 
