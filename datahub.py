@@ -18,7 +18,6 @@ from urllib2 import HTTPError, URLError
 
 baseURL = "http://datahub.io/api/3/action/"
 blacklist = [
-'masc', 																				# rdf export... not linked data
 'apertium', 																			# not rdf
 'wiktionary-en', 																		# not rdf
 'wordnet', 																				# not rdf
@@ -36,17 +35,14 @@ blacklist = [
 'framenet', 																			# not rdf
 'o-anc', 																				# not rdf
 'conceptnet', 																			# not rdf
-'phoible', 																				# not rdf
 'opus', 																				# not rdf
-# 'sanskrit-english-lexicon', 															# down	# CC: checked at runtime
-# 'pali-english-lexicon', 																# down	# CC: checked at runtime
 'dbpedia-spotlight', 																	# tool not data!
 'ss', 																					# spam
 'cgsddforja', 																			# spam
 'sqxfetge', 																			# spam
 'fafqwfaf', 																			# spam
 'sqxfetgea', 																			# spam
-'printed-book-auction-catalogues' 														# spam ?
+'printed-book-auction-catalogues', 														# spam ?
 'analisi-del-blog-http-www-beppegrillo-it', 											# spam
 'cosmetic-surgeon-wearing-nursing-scrubs-nursing-uniforms-expert-scrubs-for-safety' 	# spam
 ]
@@ -123,7 +119,7 @@ for dataset in datasets:
       print "AttributeError"
       nodes[dataset]["deadurls"] += 1
     else: nodes[dataset]["aliveurls"] += 1
-  except Error:
+  except:
     print "Error"
 
   for res in dsJSON["result"]["resources"]:
@@ -147,7 +143,7 @@ for dataset in datasets:
            print "URLError"	  
         nodes[dataset]["deadurls"] += 1
       else: nodes[dataset]["aliveurls"] += 1
-    except TypeError:
+    except:
       print "Error"
   print("alive: " +str(nodes[dataset]["aliveurls"])+"/"+str(nodes[dataset]["aliveurls"]+nodes[dataset]["deadurls"]))
 	

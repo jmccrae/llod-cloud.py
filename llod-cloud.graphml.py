@@ -4,6 +4,7 @@ import re
 import json
 import math
 import datetime
+import sys
 
 # we write directly GraphML as manually produced by yEd, but perform no positioning
 # for automated positioning, open the file, e.g., in yEd, and generate a proper layout, (e.g., yEd's "organic")
@@ -141,7 +142,7 @@ for dataset in data.keys():
 
 		graphml.write('\
 		<node id="'+id+'">\n\
-		  <data key="d4"><![CDATA['+data[dataset]["url"]+']></data>\
+		  <data key="d4"><![CDATA['+data[dataset]["url"]+']]></data>\
 		  <data key="d6">\n\
 			<y:ShapeNode>\n\
 			  <y:Geometry height="'+str(size)+'" width="'+str(size)+'"/>\n\
@@ -163,33 +164,36 @@ for dataset in data.keys():
 nr = 0
 for dataset in data.keys():
 	src = dataset.encode("ascii","ignore")
-	if "triples" in data[dataset].keys()
+	if "triples" in data[dataset].keys():
 		if "links" in data[dataset].keys():
 			for target,wt in data[dataset]["links"].items():
-				if "triples" in data[target].keys()
-					if target in data.keys():
-						s = math.log10(float(wt))
-						tgt = target.encode("ascii","ignore")
-						edgesize = edgeBaseSize * s
-						id='e'+str(nr)
-						nr = nr+1
-						graphml.write('\
-			<edge id="'+id+'" source="'+src+'" target="'+tgt+'">\n\
-			  <data key="d9">\n\
-				<y:PolyLineEdge>\n\
-				  <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>\n\
-				  <y:LineStyle color="#AAAAAA" type="line" width="'+str(edgesize)+'"/>\n\
-				  <y:Arrows source="none" target="standard"/>\n\
-				  <y:BendStyle smoothed="false"/>\n\
-				</y:PolyLineEdge>\n\
-			  </data>\n\
-			</edge>\n')
-
+				if target in data.keys():
+					if "triples" in data[target].keys():
+						if target in data.keys():
+							s = math.log10(float(wt))
+							tgt = target.encode("ascii","ignore")
+							edgesize = edgeBaseSize * s
+							id='e'+str(nr)
+							nr = nr+1
+							graphml.write('\
+				<edge id="'+id+'" source="'+src+'" target="'+tgt+'">\n\
+				  <data key="d9">\n\
+					<y:PolyLineEdge>\n\
+					  <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>\n\
+					  <y:LineStyle color="#AAAAAA" type="line" width="'+str(edgesize)+'"/>\n\
+					  <y:Arrows source="none" target="standard"/>\n\
+					  <y:BendStyle smoothed="false"/>\n\
+					</y:PolyLineEdge>\n\
+				  </data>\n\
+				</edge>\n')
+		else:
+			sys.stderr.write("no links attribute in "+dataset+"\n")
+	else:
+		sys.stderr.write("no triples attribute in "+dataset+"\n")
+		
 # finalize file
 graphml.write('</graph>\
-  <data key="d0">\
     <y:Resources/>\
-  </data>\
 </graphml>')
 graphml.close()
 # note that the nodes are not automatically positioned, this can be done using yEd
