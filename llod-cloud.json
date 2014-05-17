@@ -21,17 +21,6 @@
         "rdf_owl": 0, 
         "name": "DBpedia in Czech"
     }, 
-    "gold": {
-        "deadurls": 1, 
-        "edgecount": 1, 
-        "links": {}, 
-        "tags": [], 
-        "url": "http://datahub.io/api/3/action/package_show?id=gold", 
-        "aliveurls": 1, 
-        "formats": 0, 
-        "rdf_owl": 0, 
-        "name": "General Ontology of Linguistic Description"
-    }, 
     "pdev-lemon": {
         "deadurls": 1, 
         "edgecount": 1, 
@@ -49,6 +38,7 @@
         "aliveurls": 2, 
         "formats": 0, 
         "rdf_owl": 0, 
+        "triples": "3337", 
         "name": "PDEV-Lemon"
     }, 
     "lemonwordnet": {
@@ -73,7 +63,7 @@
         "name": "LemonWordNet"
     }, 
     "clean-energy-data-reegle": {
-        "deadurls": 0, 
+        "deadurls": 1, 
         "edgecount": 1, 
         "links": {
             "dbpedia": 330.0
@@ -94,11 +84,35 @@
             "void-sparql-endpoint"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=clean-energy-data-reegle", 
-        "aliveurls": 14, 
+        "aliveurls": 13, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "3404", 
         "name": "Linked Clean Energy Data (reegle.info)"
+    }, 
+    "babelnet": {
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 19210914.0
+        }, 
+        "tags": [
+            "access-web", 
+            "format-rdf", 
+            "ldl-2014", 
+            "lemon", 
+            "lexical-resources", 
+            "lexico", 
+            "linquistics", 
+            "llod", 
+            "void-sparql-endpoint"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=babelnet", 
+        "aliveurls": 5, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "13833737", 
+        "name": "BabelNet"
     }, 
     "eurovoc-in-skos": {
         "deadurls": 2, 
@@ -140,6 +154,7 @@
         "aliveurls": 3, 
         "formats": 0, 
         "rdf_owl": 0, 
+        "triples": "3", 
         "name": "ISOcat-metadata"
     }, 
     "muninn-world-war-i": {
@@ -176,7 +191,7 @@
         "name": "Muninn World War I"
     }, 
     "dbpedia-ja": {
-        "deadurls": 4, 
+        "deadurls": 0, 
         "edgecount": 12, 
         "links": {
             "dbpedia-ko": 148988.0, 
@@ -210,7 +225,7 @@
             "wikipedia"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=dbpedia-ja", 
-        "aliveurls": 1, 
+        "aliveurls": 2, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "079037", 
@@ -252,27 +267,22 @@
         "triples": "339096", 
         "name": "GeoWordNet"
     }, 
-    "olia": {
-        "deadurls": 0, 
-        "edgecount": 4, 
+    "greek-wordnet": {
+        "deadurls": 1, 
+        "edgecount": 1, 
         "links": {
-            "isocat": 361.0, 
-            "gold": 264.0
+            "vu-wordnet": 16718.0
         }, 
         "tags": [
-            "annotation", 
-            "corpus", 
-            "crossdomain", 
-            "linguistics", 
-            "lod", 
-            "nlp"
+            "linguistics lod", 
+            "lod"
         ], 
-        "url": "http://datahub.io/api/3/action/package_show?id=olia", 
-        "aliveurls": 5, 
+        "url": "http://datahub.io/api/3/action/package_show?id=greek-wordnet", 
+        "aliveurls": 1, 
         "formats": 0, 
         "rdf_owl": 0, 
-        "triples": "377", 
-        "name": "Ontologies of Linguistic Annotations (OLiA)"
+        "triples": "5659", 
+        "name": "Greek Wordnet"
     }, 
     "semanticquran": {
         "deadurls": 0, 
@@ -288,7 +298,7 @@
             "lod"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=semanticquran", 
-        "aliveurls": 5, 
+        "aliveurls": 6, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "574139", 
@@ -323,7 +333,7 @@
             "wikipedia"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=dbpedia-el", 
-        "aliveurls": 10, 
+        "aliveurls": 5, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "39989", 
@@ -361,42 +371,8 @@
         "aliveurls": 1, 
         "formats": 0, 
         "rdf_owl": 0, 
+        "triples": "7556", 
         "name": "EuroSentiment"
-    }, 
-    "printed-book-auction-catalogues": {
-        "deadurls": 1, 
-        "edgecount": 1, 
-        "links": {
-            "dbpedia": 1607.0
-        }, 
-        "tags": [
-            "auction", 
-            "bibliographic", 
-            "book", 
-            "catalogue", 
-            "deref-vocab", 
-            "dutch", 
-            "english", 
-            "format-rdf", 
-            "format-rdfs", 
-            "historical", 
-            "holland", 
-            "license-metadata", 
-            "lld", 
-            "lod", 
-            "no-vocab-mappings", 
-            "printed", 
-            "provenance-metadata", 
-            "publications", 
-            "published-by-third-party", 
-            "puritans"
-        ], 
-        "url": "http://datahub.io/api/3/action/package_show?id=printed-book-auction-catalogues", 
-        "aliveurls": 3, 
-        "formats": 0, 
-        "rdf_owl": 0, 
-        "triples": "521", 
-        "name": "English Language Books listed in Printed Book Auction Catalogues from 17th Century Holland"
     }, 
     "pleiades": {
         "deadurls": 0, 
@@ -663,13 +639,21 @@
             "dbpedia": 130.0
         }, 
         "tags": [
-            "Linguistic Dataset LOD RDF"
+            "Italian", 
+            "corpus", 
+            "dialect", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "questionnaire", 
+            "syntax"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=asit", 
-        "aliveurls": 3, 
+        "aliveurls": 4, 
         "formats": 0, 
         "rdf_owl": 0, 
-        "name": "ASIt"
+        "triples": "2000", 
+        "name": "Atlante Sintattico d'Italia (ASIt)"
     }, 
     "dbpedia-de": {
         "deadurls": 0, 
@@ -729,26 +713,6 @@
         "triples": "2500000", 
         "name": "Zhishi.me"
     }, 
-    "lemon-babelnet": {
-        "deadurls": 1, 
-        "edgecount": 1, 
-        "links": {
-            "dbpedia": 15381861.0
-        }, 
-        "tags": [
-            "ldl-2014", 
-            "lemon", 
-            "lexical-resources", 
-            "lexico", 
-            "linguistics", 
-            "llod"
-        ], 
-        "url": "http://datahub.io/api/3/action/package_show?id=lemon-babelnet", 
-        "aliveurls": 4, 
-        "formats": 0, 
-        "rdf_owl": 0, 
-        "name": "lemonBabelNet"
-    }, 
     "cornetto": {
         "deadurls": 0, 
         "edgecount": 2, 
@@ -782,7 +746,7 @@
         "name": "Cornetto1.2"
     }, 
     "de-gaap-ontology-lexicon": {
-        "deadurls": 2, 
+        "deadurls": 4, 
         "edgecount": 1, 
         "links": {
             "lexinfo": 43727.0
@@ -796,27 +760,32 @@
             "parse tree"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=de-gaap-ontology-lexicon", 
-        "aliveurls": 4, 
+        "aliveurls": 2, 
         "formats": 0, 
         "rdf_owl": 0, 
+        "triples": "4652", 
         "name": "de-gaap-ontology-lexicon"
     }, 
-    "greek-wordnet": {
-        "deadurls": 1, 
-        "edgecount": 1, 
+    "olia": {
+        "deadurls": 0, 
+        "edgecount": 4, 
         "links": {
-            "vu-wordnet": 16718.0
+            "isocat": 361.0
         }, 
         "tags": [
-            "linguistics lod", 
-            "lod"
+            "annotation", 
+            "corpus", 
+            "crossdomain", 
+            "linguistics", 
+            "lod", 
+            "nlp"
         ], 
-        "url": "http://datahub.io/api/3/action/package_show?id=greek-wordnet", 
-        "aliveurls": 1, 
+        "url": "http://datahub.io/api/3/action/package_show?id=olia", 
+        "aliveurls": 5, 
         "formats": 0, 
         "rdf_owl": 0, 
-        "triples": "5659", 
-        "name": "Greek Wordnet"
+        "triples": "377", 
+        "name": "Ontologies of Linguistic Annotations (OLiA)"
     }, 
     "agrovoc-skos": {
         "deadurls": 1, 
@@ -940,21 +909,30 @@
         "triples": "244", 
         "name": "lingvoj \u2013 Languages of the World (Multilingual RDF Descriptions)"
     }, 
-    "ietflang": {
-        "deadurls": 1, 
-        "edgecount": 3, 
+    "yago": {
+        "deadurls": 0, 
+        "edgecount": 6, 
         "links": {
-            "wals": 10000.0, 
-            "ids": 10000.0, 
-            "lexvo": 10000.0
+            "dbpedia": 2625671.0
         }, 
-        "tags": [], 
-        "url": "http://datahub.io/api/3/action/package_show?id=ietflang", 
-        "aliveurls": 1, 
+        "tags": [
+            "ckanupload.esw.200910", 
+            "crossdomain", 
+            "format-rdf", 
+            "linkeddata", 
+            "lod", 
+            "no-deref-vocab", 
+            "no-license-metadata", 
+            "no-provenance-metadata", 
+            "ontology", 
+            "published-by-producer"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=yago", 
+        "aliveurls": 7, 
         "formats": 0, 
         "rdf_owl": 0, 
-        "triples": "0000", 
-        "name": "ietflang"
+        "triples": "2000000", 
+        "name": "YAGO"
     }, 
     "wiktionary-dbpedia-org": {
         "deadurls": 0, 
@@ -1048,9 +1026,28 @@
         "triples": "57374", 
         "name": "WordNet 3.0 (VU Amsterdam)"
     }, 
+    "panlex": {
+        "deadurls": 0, 
+        "edgecount": 2, 
+        "links": {
+            "dbpedia": 2536556.0, 
+            "lexvo": 372.0
+        }, 
+        "tags": [
+            "lexicon", 
+            "linguistics", 
+            "machine_translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=panlex", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "8620529", 
+        "name": "PanLex"
+    }, 
     "dbpedia": {
         "deadurls": 0, 
-        "edgecount": 36, 
+        "edgecount": 38, 
         "links": {
             "yago": 18100000.0, 
             "opencyc": 20362.0
@@ -1084,6 +1081,26 @@
         "rdf_owl": 0, 
         "triples": "20000000", 
         "name": "DBpedia"
+    }, 
+    "metashare": {
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 227.0
+        }, 
+        "tags": [
+            "NLP", 
+            "linguistics", 
+            "llod", 
+            "lrec-2014", 
+            "metadata"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=metashare", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "33", 
+        "name": "MetaShare metadata model"
     }, 
     "alpino-rdf": {
         "deadurls": 1, 
@@ -1219,7 +1236,7 @@
     }, 
     "lexvo": {
         "deadurls": 0, 
-        "edgecount": 12, 
+        "edgecount": 13, 
         "links": {
             "yago": 2577.0, 
             "dbpedia": 2577.0, 
@@ -1429,30 +1446,21 @@
         "triples": "00000", 
         "name": "Automated Similarity Judgment Program lexical data"
     }, 
-    "yago": {
-        "deadurls": 0, 
-        "edgecount": 6, 
+    "ietflang": {
+        "deadurls": 1, 
+        "edgecount": 3, 
         "links": {
-            "dbpedia": 2625671.0
+            "wals": 10000.0, 
+            "ids": 10000.0, 
+            "lexvo": 10000.0
         }, 
-        "tags": [
-            "ckanupload.esw.200910", 
-            "crossdomain", 
-            "format-rdf", 
-            "linkeddata", 
-            "lod", 
-            "no-deref-vocab", 
-            "no-license-metadata", 
-            "no-provenance-metadata", 
-            "ontology", 
-            "published-by-producer"
-        ], 
-        "url": "http://datahub.io/api/3/action/package_show?id=yago", 
-        "aliveurls": 7, 
+        "tags": [], 
+        "url": "http://datahub.io/api/3/action/package_show?id=ietflang", 
+        "aliveurls": 1, 
         "formats": 0, 
         "rdf_owl": 0, 
-        "triples": "2000000", 
-        "name": "YAGO"
+        "triples": "0000", 
+        "name": "ietflang"
     }, 
     "parole-simple-ont": {
         "deadurls": 0, 
@@ -1558,6 +1566,31 @@
         "rdf_owl": 0, 
         "name": "DBpedia in Italian"
     }, 
+    "xlid-lexica": {
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 50
+        }, 
+        "tags": [
+            "catalan", 
+            "chinese", 
+            "dbpedia", 
+            "english", 
+            "german", 
+            "lexicon", 
+            "lrec-2014", 
+            "slovenian", 
+            "spanish", 
+            "word-list"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=xlid-lexica", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "0000000", 
+        "name": "xLiD-Lexica"
+    }, 
     "isocat": {
         "deadurls": 0, 
         "edgecount": 4, 
@@ -1572,6 +1605,7 @@
         "aliveurls": 3, 
         "formats": 0, 
         "rdf_owl": 0, 
+        "triples": "500", 
         "name": "ISOcat"
     }, 
     "geological-survey-of-austria-thesaurus": {
@@ -1618,6 +1652,7 @@
         "aliveurls": 4, 
         "formats": 0, 
         "rdf_owl": 0, 
+        "triples": "300000", 
         "name": "linked hypernyms"
     }, 
     "wold": {
@@ -1660,7 +1695,9 @@
             "isocat": 69.0, 
             "wiktionary-dbpedia-org": 76294.0
         }, 
-        "tags": [], 
+        "tags": [
+            "lod"
+        ], 
         "url": "http://datahub.io/api/3/action/package_show?id=lemonuby", 
         "aliveurls": 3, 
         "formats": 0, 
@@ -1690,6 +1727,27 @@
         "rdf_owl": 0, 
         "triples": "45011", 
         "name": "Project Gutenberg"
+    }, 
+    "masc": {
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "olia": 67000.0
+        }, 
+        "tags": [
+            "american-english", 
+            "annotation", 
+            "corpus", 
+            "crossdomain", 
+            "english", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=masc", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "00000", 
+        "name": "Manually Annotated Sub-Corpus (MASC) of the Open American National Corpus"
     }, 
     "dbpedia-pt": {
         "deadurls": 0, 
