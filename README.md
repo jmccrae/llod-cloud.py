@@ -25,14 +25,15 @@ Generate the graph with
 
     python llod-cloud.graphml.py 
 
-Load the resulting graph with yed 
+Edit the resulting graph with yed (http://www.yworks.com/en/products_yed_about.html)
 
 	generate "organic" layout
 	reformat manually
+	copy/adjust legend from older diagrams
 	export to SVG
 	
-Fix SVG export: move edges to the background
+Fix SVG export: front nodes, replace API URLs with regular datahub URLs
 
-	xsltproc fixGraphmlSVG.xsl FILEin.svg > FILEout.svg
+	xsltproc finalize-svg.xsl FILEin.svg > FILEout.svg
 
 The modified SVG is the "official" diagram
