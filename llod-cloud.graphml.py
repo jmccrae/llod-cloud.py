@@ -11,7 +11,7 @@ import sys
 
 
 edgeBaseSize=3
-vertexBaseSize=100
+vertexBaseSize=10
 canvas=4000
 
 data = json.load(open("llod-cloud.json"))
@@ -139,7 +139,7 @@ for dataset in data.keys():
 	size = vertexBaseSize
 	if "triples" in data[dataset].keys():
 		size = float(data[dataset]["triples"])
-		size = vertexBaseSize * math.pow(math.log10(size+1)+1,0.4)
+		size = vertexBaseSize * math.pow(math.log(size+1)+1,1)
 
 		graphml.write('\
 		<node id="'+id+'">\n\
@@ -149,7 +149,7 @@ for dataset in data.keys():
 			  <y:Geometry height="'+str(size)+'" width="'+str(size)+'"/>\n\
 			  <y:Fill color="'+color+'" transparent="false"/>\n\
 			  <y:BorderStyle color="#2222CC" type="line" width="1.0"/>\n\
-			  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Sans" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="53.00390625" modelName="custom" textColor="#000000" visible="true" width="81.841796875">'+label.encode("ascii","ignore")+'<y:LabelModel>\n\
+			  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Sans" fontSize="30" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="53.00390625" modelName="custom" textColor="#000000" visible="true" width="81.841796875">'+label.encode("ascii","ignore")+'<y:LabelModel>\n\
 				  <y:SmartNodeLabelModel distance="4.0"/>\n\
 				</y:LabelModel>\n\
 				<y:ModelParameter>\n\
