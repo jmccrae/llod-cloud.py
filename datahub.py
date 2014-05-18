@@ -18,32 +18,33 @@ from urllib2 import HTTPError, URLError
 
 baseURL = "http://datahub.io/api/3/action/"
 blacklist = [
-'apertium', 																			# not rdf
-'wiktionary-en', 																		# not rdf
-'wordnet', 																				# not rdf
-'saldo', 																				# not rdf
-'xwn', 																					# not rdf
-'talkbank', 																			# not rdf
-'french-timebank', 																		# not rdf
-'jmdict', 																				# not rdf
-'multext-east', 																		# not rdf
-'wikiword_thesaurus', 																	# not rdf
-'eu-dgt-tm', 																			# not rdf
-'multilingualeulaw', 																	# not rdf
-'wiktionary', 																			# not rdf
-'omegawiki', 																			# not rdf
-'framenet', 																			# not rdf
-'o-anc', 																				# not rdf
-'conceptnet', 																			# not rdf
-'opus', 																				# not rdf
-'dbpedia-spotlight', 																	# tool not data!
+# CC: we filter for triples attribute, hence eliminating all non-rdf resources
+	# 'apertium', 																			# not rdf
+	# 'wiktionary-en', 																		# not rdf
+	# 'wordnet', 																			# not rdf
+	# 'saldo', 																				# not rdf
+	# 'xwn', 																				# not rdf
+	# 'talkbank', 																			# not rdf
+	# 'french-timebank', 																	# not rdf
+	# 'jmdict', 																			# not rdf
+	# 'multext-east', 																		# not rdf
+	# 'wikiword_thesaurus', 																# not rdf
+	# 'eu-dgt-tm', 																			# not rdf
+	# 'multilingualeulaw', 																	# not rdf
+	# 'wiktionary', 																		# not rdf
+	# 'omegawiki', 																			# not rdf
+	# 'framenet', 																			# not rdf
+	# 'o-anc', 																				# not rdf
+	# 'conceptnet', 																		# not rdf
+	# 'opus', 																				# not rdf
+	# 'analisi-del-blog-http-www-beppegrillo-it', 											# not rdf
+	# 'dbpedia-spotlight', 																	# tool not data!
 'ss', 																					# spam
 'cgsddforja', 																			# spam
 'sqxfetge', 																			# spam
 'fafqwfaf', 																			# spam
 'sqxfetgea', 																			# spam
 'printed-book-auction-catalogues', 														# spam ?
-'analisi-del-blog-http-www-beppegrillo-it', 											# spam
 'cosmetic-surgeon-wearing-nursing-scrubs-nursing-uniforms-expert-scrubs-for-safety' 	# spam
 ]
 
@@ -169,7 +170,8 @@ for dataset in datasets:
       else:
         print("External edge:" + target)
     if(kv["key"] == "triples"):
-      nodes[dataset]["triples"] = kv["value"][1:(len(kv["value"])-1)]
+      # nodes[dataset]["triples"] = kv["value"][1:(len(kv["value"])-1)]
+	  nodes[dataset]["triples"] = kv["value"]
 
   # for debugging only (final dump at the end)
   with open("llod-cloud.json","w") as outfile:
