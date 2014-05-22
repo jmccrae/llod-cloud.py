@@ -248,7 +248,7 @@
             "wikipedia"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=dbpedia-ja", 
-        "aliveurls": 2, 
+        "aliveurls": 4, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "70790371", 
@@ -953,7 +953,7 @@
         "name": "lingvoj \u2013 Languages of the World (Multilingual RDF Descriptions)"
     }, 
     "yago": {
-        "deadurls": 0, 
+        "deadurls": 6, 
         "edgecount": 6, 
         "links": {
             "dbpedia": 2625671.0
@@ -971,7 +971,7 @@
             "published-by-producer"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=yago", 
-        "aliveurls": 7, 
+        "aliveurls": 1, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "120000000", 
@@ -1070,7 +1070,7 @@
         "name": "WordNet 3.0 (VU Amsterdam)"
     }, 
     "panlex": {
-        "deadurls": 0, 
+        "deadurls": 1, 
         "edgecount": 2, 
         "links": {
             "dbpedia": 2536556.0, 
@@ -1082,14 +1082,14 @@
             "machine_translation"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=panlex", 
-        "aliveurls": 6, 
+        "aliveurls": 5, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "786205297", 
         "name": "PanLex"
     }, 
     "dbpedia": {
-        "deadurls": 0, 
+        "deadurls": 1, 
         "edgecount": 38, 
         "links": {
             "yago": 18100000.0, 
@@ -1119,7 +1119,7 @@
             "wikipedia"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=dbpedia", 
-        "aliveurls": 11, 
+        "aliveurls": 10, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "1200000000", 
@@ -1487,7 +1487,7 @@
         "name": "Parole/Simple 'lexinfo' Ontology"
     }, 
     "ids": {
-        "deadurls": 1, 
+        "deadurls": 0, 
         "edgecount": 4, 
         "links": {
             "wals": 216.0, 
@@ -1504,7 +1504,7 @@
             "typology"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=ids", 
-        "aliveurls": 4, 
+        "aliveurls": 5, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "2000000", 
@@ -1584,7 +1584,7 @@
         "name": "DBpedia in Italian"
     }, 
     "xlid-lexica": {
-        "deadurls": 3, 
+        "deadurls": 2, 
         "edgecount": 1, 
         "links": {
             "dbpedia": 50
@@ -1602,7 +1602,7 @@
             "word-list"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=xlid-lexica", 
-        "aliveurls": 1, 
+        "aliveurls": 2, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "300000000", 
@@ -1768,7 +1768,7 @@
         "name": "lemonUby"
     }, 
     "masc": {
-        "deadurls": 3, 
+        "deadurls": 1, 
         "edgecount": 1, 
         "links": {
             "olia": 67000.0
@@ -1782,7 +1782,7 @@
             "lod"
         ], 
         "url": "http://datahub.io/api/3/action/package_show?id=masc", 
-        "aliveurls": 1, 
+        "aliveurls": 3, 
         "formats": 0, 
         "rdf_owl": 0, 
         "triples": "1000000", 

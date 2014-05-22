@@ -38,7 +38,7 @@ blacklist = [
 	# 'conceptnet', 																		# not rdf
 	# 'opus', 																				# not rdf
 	# 'analisi-del-blog-http-www-beppegrillo-it', 											# not rdf
-	# 'dbpedia-spotlight', 																	# tool not data!
+'dbpedia-spotlight', 																	# tool not data
 'ss', 																					# spam
 'cgsddforja', 																			# spam
 'sqxfetge', 																			# spam
