@@ -17,6 +17,8 @@ def do_head(url):
         return False
     except URLError:
         return False
+    except UnicodeEncodeError:
+        return True
 
 linghub_sparql = "http://linghub.lider-project.eu/sparql/?query="
 
@@ -73,7 +75,7 @@ for result in xml_results:
         for binding in result2.findall(SR + 'binding'):
             var_name = binding.attrib['name']
             if var_name == 'triples':
-                triples = int(binding.find(SR + 'literal').text)
+                triples = binding.find(SR + 'literal').text
             elif var_name == 'title':
                 title = binding.find(SR + 'literal').text
             elif var_name == 'target':
@@ -81,7 +83,7 @@ for result in xml_results:
                 for b in (result2.findall(SR + 'binding')):
                     var_name2 = b.attrib['name']
                     if var_name2 == 'links':
-                        links = int(b.find(SR + 'literal').text)
+                        links = b.find(SR + 'literal').text
                         subsets[target] = links
     keyword_query_url = linghub_sparql + quote_plus(keyword_query % uri)
     keyword_root = et.parse(urlopen(keyword_query_url))
