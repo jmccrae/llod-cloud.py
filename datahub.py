@@ -1,6 +1,7 @@
 import urllib2
 import json
 import re
+import sys
 
 from urllib2 import HTTPError, URLError
 
@@ -16,18 +17,38 @@ from urllib2 import HTTPError, URLError
 # "lexicon", "wordnet" => llod:corpus
 # (none of these) => llod:language_description
 
+print("DataHub LLOD cloud generator")
+sys.stdout.flush()
+
 baseURL = "http://datahub.io/api/3/action/"
 blacklist = [
-    'dbpedia-spotlight', 																	# tool not data
     'ss', 																					# spam
     'cgsddforja', 																			# spam
     'sqxfetge', 																			# spam
     'fafqwfaf', 																			# spam
     'sqxfetgea', 																			# spam
-    'printed-book-auction-catalogues', 														# spam ?
     """cosmetic-surgeon-wearing-nursing-scrubs-nursing-uniforms-
 expert-scrubs-for-safety""" 	# spam
 ]
+
+license_uris = {
+    "cc-by": "http://www.opendefinition.org/licenses/cc-by",
+    "cc-by-sa": "http://www.opendefinition.org/licenses/cc-by-sa",
+    "cc-nc": "http://www.opendefinition.org/licenses/cc-nc",
+    "cc-zero": "http://www.opendefinition.org/licenses/cc-zero",
+    "gfdl": "http://www.opendefinition.org/licenses/gfdl",
+    "odc-by": "http://www.opendefinition.org/licenses/odc-by",
+    "odc-odbl": "http://www.opendefinition.org/licenses/odc-odbl",
+    "odc-pddl": "http://www.opendefinition.org/licenses/odc-pddl",
+    "other-at": "attribution",
+    "other-closed": "closed",
+    "other-nc": "nc",
+    "other-open": "open",
+    "other-pd": "public-domain",
+    "uk-ogl": "http://reference.data.gov.uk/id/open-government-licence"
+}
+
+
 
 
 def ckanListDatasetsInGroup(group):
@@ -51,12 +72,14 @@ nodes = {}
 datasetJSON = ckanListDatasetsInGroup("owlg")
 datasets = [ds["name"] for ds in datasetJSON["result"]["packages"]]
 print "group 'owlg': "+str(len(datasets))+" datasets"
+sys.stdout.flush()
 for group in ["mlode2012", "sfb673"]:
     newDatasetJSON = ckanListDatasetsInGroup(group)
     newDatasets = [ds["name"] for ds in newDatasetJSON["result"]["packages"]]
     datasets = datasets + newDatasets
     datasets = list(set(datasets))
     print "+ group '"+group+"': "+str(len(datasets))+" datasets"
+    sys.stdout.flush()
 for tag in ["llod", "linguistics%20lod", "lexicon", "corpus", "thesaurus",
             "isocat", "linguistic", "linguistics", "typology", "lrec-2014",
             "lexical-resources"]:
@@ -65,9 +88,11 @@ for tag in ["llod", "linguistics%20lod", "lexicon", "corpus", "thesaurus",
     datasets = datasets + newDatasets
     datasets = list(set(datasets))
     print "+ tag '"+tag+"': "+str(len(datasets))+" datasets"
+    sys.stdout.flush()
 
 datasets = set(datasets) - set(blacklist)
 print "- blacklist: "+str(len(datasets))+" datasets"
+sys.stdout.flush()
 
 for dataset in datasets:
     nodes[dataset] = {}
@@ -76,6 +101,7 @@ for dataset in datasets:
 
 for dataset in datasets:
     print("Dataset:" + dataset)
+    sys.stdout.flush()
     dsJSON = ckanDataset(dataset)
     nodes[dataset]["url"] = baseURL + "package_show?id=" + dataset
     nodes[dataset]["name"] = dsJSON["result"]["title"]
@@ -85,6 +111,10 @@ for dataset in datasets:
     nodes[dataset]["deadurls"] = 0
     nodes[dataset]["formats"] = 0
     nodes[dataset]["rdf_owl"] = 0
+    nodes[dataset]["email"] = dsJSON["result"]["maintainer_email"]
+    if dsJSON["result"]["license_id"] in license_uris:
+        nodes[dataset]["license"] = (
+            license_uris[dsJSON["result"]["license_id"]])
 
     for tag in dsJSON["result"]["tags"]:
         nodes[dataset]["tags"].extend([tag["name"]])
@@ -163,6 +193,7 @@ for dataset in datasets:
             print "Error"
     print("alive: " + str(nodes[dataset]["aliveurls"]) + "/" +
           str(nodes[dataset]["aliveurls"] + nodes[dataset]["deadurls"]))
+    sys.stdout.flush()
 
     # count links
     for kv in dsJSON["result"]["extras"]:
@@ -187,17 +218,29 @@ for dataset in datasets:
     with open("llod-cloud.json", "w") as outfile:
         json.dump(nodes, outfile, indent=4)
 
-# since LDL-2014, we exclude unlinked data sets
-for v in nodes.keys():
-    if(nodes[v]["edgecount"] == 0):
-        print("remove %s due to no links" % nodes[v]["name"])
-        del nodes[v]
+with open("excluded-resources.csv", "w") as outfile:
+    outfile.write("ID,Title,Issue,Email\n")
+    # since LDL-2014, we exclude unlinked data sets
+    for v in nodes.keys():
+        if(nodes[v]["edgecount"] == 0):
+            print("remove %s due to no links (email: %s)" %
+                  (nodes[v]["name"], nodes[v]["email"]))
+            outfile.write("%s,\"%s\",\"No links\",%s\n" %
+                          (v, nodes[v]["name"], nodes[v]["email"]))
+            del nodes[v]
 
-# we exclude everything that's totally down
-for v in nodes.keys():
-    if(nodes[v]["aliveurls"] == 0):
-        print("remove %s as no URLs resolve" % nodes[v]["name"])
-        del nodes[v]
+    sys.stdout.flush()
+
+    # we exclude everything that's totally down
+    for v in nodes.keys():
+        if(nodes[v]["aliveurls"] == 0):
+            print("remove %s as no URLs resolve (email: %s)" %
+                  (nodes[v]["name"], nodes[v]["email"]))
+            outfile.write("%s,\"%s\",\"Does not resolve\",%s\n" %
+                          (v, nodes[v]["name"], nodes[v]["email"]))
+            del nodes[v]
+
+sys.stdout.flush()
 
 with open("llod-cloud.json", "w") as outfile:
     json.dump(nodes, outfile, indent=4)

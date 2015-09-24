@@ -1,2141 +1,3432 @@
 {
-    "pdev-lemon": {
-        "triples": "233372", 
-        "name": "PDEV-Lemon", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "2078"
-        }, 
-        "tags": [
-            "linguistic", 
-            "lod", 
-            "lexical-resources", 
-            "llod", 
-            "ldl-2014", 
-            "lexicon"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/pdev-lemon", 
-        "aliveurls": 2, 
-        "deadurls": 0
+    "dbpedia-ko": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 0, 
+        "edgecount": 1, 
+        "links": {}, 
+        "tags": [], 
+        "url": "http://datahub.io/api/3/action/package_show?id=dbpedia-ko", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "email": "", 
+        "name": "DBpedia in Korean"
     }, 
-    "clean-energy-data-reegle": {
-        "triples": "334049", 
-        "name": "Linked Clean Energy Data (reegle.info)", 
+    "dbpedia-cs": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 0, 
+        "edgecount": 1, 
+        "links": {}, 
+        "tags": [], 
+        "url": "http://datahub.io/api/3/action/package_show?id=dbpedia-cs", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "email": "", 
+        "name": "DBpedia in Czech"
+    }, 
+    "gold": {
+        "deadurls": 1, 
+        "edgecount": 5, 
+        "links": {}, 
+        "tags": [
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "ontology"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=gold", 
+        "aliveurls": 2, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "3000", 
+        "email": "", 
+        "name": "General Ontology of Linguistic Description"
+    }, 
+    "apertium-rdf-eo-en": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "330", 
-            "http://linghub.lider-project.eu/datahub/open-energy-info-wiki": "227"
+            "lexinfo": 43289.0, 
+            "babelnet": 7585.0
         }, 
         "tags": [
-            "government", 
-            "renewable-energy", 
-            "save-energy", 
-            "published-by-producer", 
-            "deref-vocab", 
-            "void-sparql-endpoint", 
-            "climate", 
-            "format-skos", 
-            "thesaurus", 
+            "Apertium", 
+            "English", 
+            "Esperanto", 
+            "bilingual", 
+            "dictionary", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
             "lod", 
-            "license-metadata", 
-            "provenance-metadata", 
-            "energy"
+            "multilingual", 
+            "rdf", 
+            "translation"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/clean-energy-data-reegle", 
-        "aliveurls": 13, 
-        "deadurls": 0
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-eo-en", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "617772", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF EO-EN"
+    }, 
+    "pdev-lemon": {
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "lexinfo": 2078.0
+        }, 
+        "tags": [
+            "ldl-2014", 
+            "lexical-resources", 
+            "lexicon", 
+            "linguistic", 
+            "llod", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=pdev-lemon", 
+        "aliveurls": 2, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "233372", 
+        "email": "", 
+        "name": "PDEV-Lemon"
+    }, 
+    "lexinfo": {
+        "license": "public-domain", 
+        "deadurls": 0, 
+        "edgecount": 35, 
+        "links": {
+            "isocat": 359.0
+        }, 
+        "tags": [
+            "crossdomain", 
+            "linguistic", 
+            "llod", 
+            "lod", 
+            "ontology"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=lexinfo", 
+        "aliveurls": 2, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "4374", 
+        "email": "", 
+        "name": "lexinfo"
+    }, 
+    "apertium-rdf-eo-es": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 29723.0, 
+            "babelnet": 6912.0
+        }, 
+        "tags": [
+            "Apertium", 
+            "Esperanto", 
+            "Spanish", 
+            "bilingual", 
+            "dictionary", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-eo-es", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "380198", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF EO-ES"
+    }, 
+    "apertium-rdf-en-gl": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 32144.0, 
+            "babelnet": 8308.0
+        }, 
+        "tags": [
+            "Apertium", 
+            "English", 
+            "Galician", 
+            "bilingual", 
+            "dictionary", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-en-gl", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "425117", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF EN-GL"
     }, 
     "babelnet": {
-        "triples": "1138337378", 
-        "name": "BabelNet", 
+        "license": "nc", 
+        "deadurls": 1, 
+        "edgecount": 28, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/wikipedia": "81305156", 
-            "http://linghub.lider-project.eu/datahub/lemonwordnet": "117657", 
-            "http://linghub.lider-project.eu/datahub/dbpedia": "19210914", 
-            "http://linghub.lider-project.eu/datahub/lemonuby": "15140"
+            "lemonuby": 20241.0, 
+            "lexinfo": 68811033.0, 
+            "dbpedia": 27585374.0
         }, 
         "tags": [
             "access-web", 
-            "lexico", 
-            "ldl-2014", 
-            "llod", 
-            "lexical-resources", 
-            "lemon", 
-            "linguistics", 
             "format-rdf", 
+            "ldl-2014", 
+            "lemon", 
+            "lexical-resources", 
+            "lexico", 
+            "linguistics", 
+            "llod", 
             "void-sparql-endpoint"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/babelnet", 
+        "url": "http://datahub.io/api/3/action/package_show?id=babelnet", 
         "aliveurls": 3, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "1932845662", 
+        "email": "cecconi@di.uniroma1.it", 
+        "name": "BabelNet"
+    }, 
+    "apertium-rdf-oc-ca": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 26643.0, 
+            "babelnet": 3016.0
+        }, 
+        "tags": [
+            "Apertium", 
+            "Catalan", 
+            "Occitan", 
+            "bilingual", 
+            "dictionary", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-oc-ca", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "346346", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF OC-CA"
+    }, 
+    "simple": {
+        "license": "http://www.opendefinition.org/licenses/odc-by", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 31449.0
+        }, 
+        "tags": [
+            "lexical-resource", 
+            "lexicon", 
+            "linguistic", 
+            "llod", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=simple", 
+        "aliveurls": 11, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "372294", 
+        "email": "monica.monachini@ilc.cnr.it", 
+        "name": "SIMPLE"
+    }, 
+    "eurovoc-in-skos": {
+        "license": "closed", 
+        "deadurls": 2, 
+        "edgecount": 1, 
+        "links": {}, 
+        "tags": [
+            "ctic", 
+            "europe", 
+            "eurovoc", 
+            "format-skos", 
+            "lld", 
+            "lodcloud.candidate", 
+            "lodcloud.unresolvable", 
+            "published-by-third-party", 
+            "skos", 
+            "sparql", 
+            "thesaurus"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=eurovoc-in-skos", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "email": "", 
+        "name": "EUROVOC in SKOS"
     }, 
     "isocat-metadata": {
-        "triples": "830", 
-        "name": "ISOcat-metadata", 
+        "license": "nc", 
+        "deadurls": 1, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/isocat": "65"
+            "isocat": 65.0
         }, 
         "tags": [
             "ISOcat", 
-            "terminology", 
-            "metadata", 
-            "lod", 
+            "linguistic", 
             "llod", 
+            "lod", 
+            "metadata", 
             "ontology", 
-            "linguistic"
+            "terminology"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/isocat-metadata", 
-        "aliveurls": 2, 
-        "deadurls": 1
+        "url": "http://datahub.io/api/3/action/package_show?id=isocat-metadata", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "830", 
+        "email": "nalida@sfs.uni-tuebingen.de", 
+        "name": "ISOcat-metadata"
     }, 
     "muninn-world-war-i": {
-        "triples": "38927740", 
-        "name": "Muninn World War I", 
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 0, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/ww1lod": "973", 
-            "http://linghub.lider-project.eu/datahub/dbpedia": "1895", 
-            "http://linghub.lider-project.eu/datahub/geonames-semantic-web": "32306", 
-            "http://linghub.lider-project.eu/datahub/linkedgeodata": "311"
+            "dbpedia": 1895.0
         }, 
         "tags": [
-            "format-prov", 
-            "license-metadata", 
-            "format-dcterms", 
-            "format-void", 
-            "format-time", 
-            "format-naval", 
-            "search", 
-            "provenance-metadata", 
-            "format-rdf", 
+            "access-api", 
+            "access-bulk", 
+            "access-www", 
+            "crossdomain", 
             "deref-vocab", 
             "format-cc", 
-            "void-sparql-endpoint", 
-            "format-doap", 
-            "crossdomain", 
-            "format-mil", 
-            "llod", 
-            "access-www", 
-            "published-by-producer", 
-            "format-foaf", 
-            "vocab-mappings", 
-            "format-skos", 
-            "format-graves", 
             "format-dbpedia", 
             "format-dc", 
-            "access-bulk", 
-            "format-rdfs", 
-            "access-api", 
-            "lod", 
+            "format-dcterms", 
+            "format-doap", 
+            "format-foaf", 
+            "format-graves", 
+            "format-mil", 
+            "format-naval", 
             "format-owl", 
-            "rdf"
+            "format-prov", 
+            "format-rdf", 
+            "format-rdfs", 
+            "format-skos", 
+            "format-time", 
+            "format-void", 
+            "license-metadata", 
+            "llod", 
+            "lod", 
+            "provenance-metadata", 
+            "published-by-producer", 
+            "rdf", 
+            "search", 
+            "vocab-mappings", 
+            "void-sparql-endpoint"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/muninn-world-war-i", 
-        "aliveurls": 9, 
-        "deadurls": 0
+        "url": "http://datahub.io/api/3/action/package_show?id=muninn-world-war-i", 
+        "aliveurls": 10, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "38927740", 
+        "email": "warren@muninn-project.org", 
+        "name": "Muninn World War I"
+    }, 
+    "lexvo": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 0, 
+        "edgecount": 22, 
+        "links": {
+            "yago": 2577.0, 
+            "dbpedia": 2577.0, 
+            "lingvoj": 448.0
+        }, 
+        "tags": [
+            "ckanupload.esw.200910", 
+            "crossdomain", 
+            "deref-vocab", 
+            "format-rdf", 
+            "format-xsd", 
+            "language", 
+            "linkeddata", 
+            "lod", 
+            "no-license-metadata", 
+            "no-vocab-mappings", 
+            "provenance-metadata", 
+            "published-by-third-party", 
+            "rdf", 
+            "void-sparql-endpoint"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=lexvo", 
+        "aliveurls": 5, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "353815", 
+        "email": "demelo@mpi-inf.de", 
+        "name": "Lexvo"
     }, 
     "saldo-rdf": {
-        "triples": -1, 
-        "name": "", 
-        "links": {}, 
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "isocat": 69.0
+        }, 
         "tags": [
-            "llod", 
+            "lexicon", 
             "linguistics", 
-            "lod", 
-            "lexicon"
+            "llod", 
+            "lod"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/saldo-rdf", 
+        "url": "http://datahub.io/api/3/action/package_show?id=saldo-rdf", 
         "aliveurls": 3, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "email": "dana.dannells@svenska.gu.se", 
+        "name": "SALDO-RDF"
     }, 
     "apertium-rdf-ca-it": {
-        "triples": "194949", 
-        "name": "Apertium RDF CA-IT", 
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "14592"
+            "lexinfo": 14592.0, 
+            "babelnet": 14212.0
         }, 
         "tags": [
-            "linguistics", 
-            "Italian", 
-            "linguistic lod", 
-            "Catalan", 
-            "dictionary", 
-            "lexicon", 
-            "lod", 
-            "lemon", 
-            "rdf", 
-            "multilingual", 
-            "llod", 
-            "translation", 
             "Apertium", 
-            "bilingual"
+            "Catalan", 
+            "Italian", 
+            "bilingual", 
+            "dictionary", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/apertium-rdf-ca-it", 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-ca-it", 
         "aliveurls": 6, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "180851", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF CA-IT"
     }, 
     "fiesta": {
-        "triples": "245", 
-        "name": "FiESTA", 
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 1, 
+        "edgecount": 2, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/provenanceweb": "3", 
-            "http://linghub.lider-project.eu/datahub/isocat": "14"
+            "isocat": 14.0
         }, 
         "tags": [
-            "published-by-producer", 
+            "format-rdf", 
             "general ontology of linguistic description", 
+            "linguistics", 
             "lod", 
-            "topic.schemata", 
-            "schemata", 
-            "linguistics", 
+            "published-by-producer", 
             "rdf", 
-            "format-rdf"
+            "schemata", 
+            "topic.schemata"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/fiesta", 
+        "url": "http://datahub.io/api/3/action/package_show?id=fiesta", 
         "aliveurls": 1, 
-        "deadurls": 0
-    }, 
-    "clld-glottolog": {
-        "triples": "5546386", 
-        "name": "CLLD-GLOTTOLOG", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/gold": "23860", 
-            "http://linghub.lider-project.eu/datahub/dbpedia": "7684", 
-            "http://linghub.lider-project.eu/datahub/lexvo": "7684", 
-            "http://linghub.lider-project.eu/datahub/geonames": "10602"
-        }, 
-        "tags": [
-            "llod", 
-            "linguistics", 
-            "lod"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/clld-glottolog", 
-        "aliveurls": 2, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "245", 
+        "email": "pmenke@TechFak.Uni-Bielefeld.DE", 
+        "name": "FiESTA"
     }, 
     "sentiws": {
-        "triples": "30339", 
-        "name": "SentimentWortschatz", 
+        "license": "http://www.opendefinition.org/licenses/cc-nc", 
+        "deadurls": 0, 
+        "edgecount": 2, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/wiktionary.dbpedia.org": "4233"
+            "wiktionary-dbpedia-org": 4233.0, 
+            "lexvo": 3462.0
         }, 
         "tags": [
-            "linguistics", 
             "crossdomain", 
+            "linguistics", 
             "lod"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/sentiws", 
-        "aliveurls": 3, 
-        "deadurls": 1
+        "url": "http://datahub.io/api/3/action/package_show?id=sentiws", 
+        "aliveurls": 4, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "30339", 
+        "email": "Sherif@informatik.uni-leipzig.de", 
+        "name": "SentimentWortschatz"
     }, 
-    "geowordnet": {
-        "triples": "53390969", 
-        "name": "GeoWordNet", 
+    "apertium-rdf-pt-gl": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/geonames-semantic-web": "7396476", 
-            "http://linghub.lider-project.eu/datahub/vu-wordnet": "2054873"
+            "lexinfo": 18944.0, 
+            "babelnet": 4398.0
         }, 
         "tags": [
-            "linguistic", 
-            "format-wn20schema", 
+            "Apertium", 
+            "Galician", 
+            "Portuguese", 
+            "bilingual", 
+            "dictionary", 
+            "general ontology of linguistic description", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-pt-gl", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "234065", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF PT-GL"
+    }, 
+    "geowordnet": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 5, 
+        "edgecount": 1, 
+        "links": {
+            "vu-wordnet": 2054873.0
+        }, 
+        "tags": [
+            "english", 
             "format-dc", 
-            "published-by-producer", 
-            "nlp", 
+            "format-rdf", 
+            "format-rdfs", 
+            "format-skos", 
             "format-vu-wordnet", 
+            "format-w3c-wordnet", 
+            "format-wn20schema", 
+            "format-wordnet", 
+            "geographic", 
+            "geonames", 
             "italian", 
             "license-metadata", 
+            "linguistic", 
             "linguistics", 
-            "format-w3c-wordnet", 
-            "format-wordnet", 
-            "wordnet", 
             "lod", 
-            "format-rdfs", 
-            "geonames", 
-            "format-skos", 
+            "nlp", 
+            "no-deref-vocab", 
             "provenance-metadata", 
-            "format-rdf", 
-            "english", 
-            "geographic", 
-            "no-deref-vocab"
+            "published-by-producer", 
+            "wordnet"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/geowordnet", 
+        "url": "http://datahub.io/api/3/action/package_show?id=geowordnet", 
         "aliveurls": 3, 
-        "deadurls": 4
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "53390969", 
+        "email": "http://autayeu.com", 
+        "name": "GeoWordNet"
     }, 
     "apertium-rdf-fr-es": {
-        "triples": "495614", 
-        "name": "Apertium RDF FR-ES", 
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "40121"
+            "lexinfo": 40121.0, 
+            "babelnet": 29144.0
         }, 
         "tags": [
             "Apertium", 
             "French", 
-            "bilingual", 
-            "lod", 
-            "llod", 
-            "multilingual", 
-            "dictionary", 
-            "linguistics", 
             "Spanish", 
+            "bilingual", 
+            "dictionary", 
             "lemon", 
+            "lexicon", 
             "linguistic lod", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "multilingual", 
             "rdf", 
-            "translation", 
-            "lexicon"
+            "translation"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/apertium-rdf-fr-es", 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-fr-es", 
         "aliveurls": 6, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "495614", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF FR-ES"
+    }, 
+    "emn": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "babelnet": 1322.0
+        }, 
+        "tags": [
+            "lexicon", 
+            "linguistic"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=emn", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "117115", 
+        "email": "john@mccr.ae", 
+        "name": "EMN"
     }, 
     "wikilinks-rdf-nif": {
-        "triples": "533.016.300", 
-        "name": "Wikilinks RDF/NIF", 
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "31.542.468"
+            "dbpedia": 31542468.0
         }, 
         "tags": [
-            "linguistics", 
             "format-nif", 
             "linguistic", 
-            "rdf", 
-            "nif", 
-            "lod", 
-            "ner"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/wikilinks-rdf-nif", 
-        "aliveurls": 4, 
-        "deadurls": 0
-    }, 
-    "kore-50-nif-ner-corpus": {
-        "triples": "1410", 
-        "name": "KORE 50 NIF NER Corpus", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "144"
-        }, 
-        "tags": [
-            "nif", 
-            "corpus", 
-            "ner", 
-            "lod", 
-            "training", 
             "linguistics", 
-            "evaluation", 
-            "linguistic", 
+            "lod", 
+            "ner", 
+            "nif", 
             "rdf"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/kore-50-nif-ner-corpus", 
+        "url": "http://datahub.io/api/3/action/package_show?id=wikilinks-rdf-nif", 
         "aliveurls": 4, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "533016300", 
+        "email": "bruemmer@informatik.uni-leipzig.de", 
+        "name": "Wikilinks RDF/NIF"
     }, 
-    "greek-wordnet": {
-        "triples": "356595", 
-        "name": "Greek Wordnet", 
+    "kore-50-nif-ner-corpus": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/vu-wordnet": "16718 ", 
-            "http://linghub.lider-project.eu/datahub/w3c-wordnet": "18457"
+            "dbpedia": 144.0
         }, 
         "tags": [
-            "linguistics lod", 
-            "lod"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/greek-wordnet", 
-        "aliveurls": 3, 
-        "deadurls": 0
-    }, 
-    "wordnet-rdf": {
-        "triples": "8903374", 
-        "name": "WordNet-RDF", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/verbnet": "26353", 
-            "http://linghub.lider-project.eu/datahub/lexvo": "458907", 
-            "http://linghub.lider-project.eu/datahub/w3c-wordnet": "99927", 
-            "http://linghub.lider-project.eu/datahub/lemonuby": "475503"
-        }, 
-        "tags": [
-            "lexicon", 
-            "linguistics"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/wordnet-rdf", 
-        "aliveurls": 1, 
-        "deadurls": 0
-    }, 
-    "semanticquran": {
-        "triples": "15741399", 
-        "name": "SemanticQuran", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "7718", 
-            "http://linghub.lider-project.eu/datahub/wiktionary": "18655"
-        }, 
-        "tags": [
-            "crossdomain", 
-            "AKSW", 
-            "jrc", 
-            "lod", 
-            "linguistics"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/semanticquran", 
-        "aliveurls": 5, 
-        "deadurls": 0
-    }, 
-    "rss-500-nif-ner-corpus": {
-        "triples": "10038", 
-        "name": "RSS-500 NIF NER CORPUS", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "524"
-        }, 
-        "tags": [
-            "linguistics", 
-            "linguistic", 
-            "lod", 
-            "nif", 
-            "rdf", 
             "corpus", 
             "evaluation", 
+            "linguistic", 
+            "linguistics", 
+            "lod", 
             "ner", 
+            "nif", 
+            "rdf", 
             "training"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/rss-500-nif-ner-corpus", 
-        "aliveurls": 3, 
-        "deadurls": 0
+        "url": "http://datahub.io/api/3/action/package_show?id=kore-50-nif-ner-corpus", 
+        "aliveurls": 4, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "1410", 
+        "email": "magnus.knuth\"at\"hpi.uni-potsdam.de", 
+        "name": "KORE 50 NIF NER Corpus"
+    }, 
+    "greek-wordnet": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "vu-wordnet": 16718.0
+        }, 
+        "tags": [
+            "linguistics", 
+            "linguistics lod", 
+            "llod", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=greek-wordnet", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "356595", 
+        "email": "okfngr@gmail.com", 
+        "name": "Greek Wordnet"
+    }, 
+    "apertium-rdf-eo-ca": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 32378.0, 
+            "babelnet": 7036.0
+        }, 
+        "tags": [
+            "Apertium", 
+            "Catalan", 
+            "Esperanto", 
+            "bilingual", 
+            "dictionary", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-eo-ca", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "426301", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF EO-CA"
+    }, 
+    "semanticquran": {
+        "license": "http://www.opendefinition.org/licenses/cc-nc", 
+        "deadurls": 0, 
+        "edgecount": 2, 
+        "links": {
+            "wiktionary": 18655.0, 
+            "dbpedia": 7718.0
+        }, 
+        "tags": [
+            "AKSW", 
+            "crossdomain", 
+            "jrc", 
+            "linguistics", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=semanticquran", 
+        "aliveurls": 5, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "15741399", 
+        "email": "sherif@informatik.uni-leipzig.de", 
+        "name": "SemanticQuran"
+    }, 
+    "apertium-rdf-es-an": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 5840.0, 
+            "babelnet": 86.0
+        }, 
+        "tags": [
+            "Apertium", 
+            "Aragonese", 
+            "Spanish", 
+            "bilingual", 
+            "dictionary", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-es-an", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "71997", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF ES-AN"
     }, 
     "dbpedia-es": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 1, 
+        "edgecount": 8, 
+        "links": {
+            "dbpedia-ko": 169592.0, 
+            "dbpedia-it": 457626.0, 
+            "dbpedia-cs": 161377.0, 
+            "dbpedia-de": 425511.0, 
+            "dbpedia-nl": 429827.0, 
+            "dbpedia": 837609.0, 
+            "dbpedia-fr": 538425.0, 
+            "dbpedia-pt": 440350.0
+        }, 
+        "tags": [
+            "crossdomain", 
+            "linguistic", 
+            "lod", 
+            "no-proprietary-vocab", 
+            "published-by-producer", 
+            "wikipedia"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=dbpedia-es", 
+        "aliveurls": 4, 
+        "formats": 0, 
+        "rdf_owl": 0, 
         "triples": "169101647", 
-        "name": "DBpedia in Spanish", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia-de": "425511", 
-            "http://linghub.lider-project.eu/datahub/dbpedia-el": "66175", 
-            "http://linghub.lider-project.eu/datahub/dbpedia-ko": "169592", 
-            "http://linghub.lider-project.eu/datahub/dbpedia-ja": "257732", 
-            "http://linghub.lider-project.eu/datahub/dbpedia-fr": "538425", 
-            "http://linghub.lider-project.eu/datahub/dbpedia-pt": "440350", 
-            "http://linghub.lider-project.eu/datahub/dbpedia-nl": "429827", 
-            "http://linghub.lider-project.eu/datahub/dbpedia": "837609", 
-            "http://linghub.lider-project.eu/datahub/dbpedia-it": "457626", 
-            "http://linghub.lider-project.eu/datahub/dbpedia-cs": "161377"
-        }, 
-        "tags": [
-            "wikipedia", 
-            "lod", 
-            "published-by-producer", 
-            "linguistic", 
-            "no-proprietary-vocab", 
-            "crossdomain"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/dbpedia-es", 
-        "aliveurls": 3, 
-        "deadurls": 1
+        "email": "mariano.rico@fi.upm.es", 
+        "name": "DBpedia in Spanish"
     }, 
-    "pleiades": {
-        "triples": "2600000", 
-        "name": "Pleiades", 
+    "eurosentiment": {
+        "license": "http://www.opendefinition.org/licenses/gfdl", 
+        "deadurls": 1, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "127"
-        }, 
-        "tags": [
-            "historyhackday", 
-            "no-proprietary-vocab", 
-            "lod", 
-            "geodata", 
-            "classics", 
-            "geography", 
-            "format-foaf", 
-            "format-spacerel", 
-            "ancient", 
-            "format-skos", 
-            "no-provenance-metadata", 
-            "geographic", 
-            "greek", 
-            "no-licence-metadata", 
-            "published-by-producer", 
-            "archaeology", 
-            "format-spatial", 
-            "format-geo", 
-            "roman", 
-            "format-rdf", 
-            "thesaurus"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/pleiades", 
-        "aliveurls": 3, 
-        "deadurls": 0
-    }, 
-    "clld-apics": {
-        "triples": "463009", 
-        "name": "CLLD-APICS", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "54", 
-            "http://linghub.lider-project.eu/datahub/clld-glottolog": "75", 
-            "http://linghub.lider-project.eu/datahub/lexvo": "54"
-        }, 
-        "tags": [
-            "lod", 
-            "llod", 
-            "linguistics"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/clld-apics", 
-        "aliveurls": 2, 
-        "deadurls": 0
-    }, 
-    "olia-discourse": {
-        "triples": "4175", 
-        "name": "OLiA Discourse", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/olia": "81"
-        }, 
-        "tags": [
-            "information status", 
-            "discourse structure", 
-            "anaphora", 
-            "lod", 
-            "coherence relations", 
-            "llod", 
-            "lrec-2014", 
-            "coreference", 
-            "discourse", 
-            "terminology", 
-            "information structure", 
-            "OLiA", 
-            "discourse relations", 
-            "linguistic"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/olia-discourse", 
-        "aliveurls": 2, 
-        "deadurls": 0
-    }, 
-    "ontos-news-portal": {
-        "triples": "2677965", 
-        "name": "Ontos News Portal", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "6935", 
-            "http://linghub.lider-project.eu/datahub/freebase": "30025", 
-            "http://linghub.lider-project.eu/datahub/geonames-semantic-web": "90"
-        }, 
-        "tags": [
-            "news", 
-            "no-deref-vocab", 
-            "lod", 
-            "llod", 
-            "media", 
-            "semantic-web", 
-            "published-by-producer", 
-            "linguistics", 
-            "rdf", 
-            "nlp"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/ontos-news-portal", 
-        "aliveurls": 2, 
-        "deadurls": 0
-    }, 
-    "mlsa": {
-        "triples": "21000", 
-        "name": " MLSA - A Multi-layered Reference Corpus for German Sentiment Analysis", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/wiktionary-dbpedia-org": "1371", 
-            "http://linghub.lider-project.eu/datahub/wals": "2373", 
-            "http://linghub.lider-project.eu/datahub/lexvo": "2373", 
-            "http://linghub.lider-project.eu/datahub/glottolog-langdoc": "2373"
-        }, 
-        "tags": [
-            "lod", 
-            "sentiment", 
-            "linguistics", 
-            "crossdomain"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/mlsa", 
-        "aliveurls": 3, 
-        "deadurls": 1
-    }, 
-    "open-data-thesaurus": {
-        "triples": "8000", 
-        "name": "Open Data Thesaurus", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "50", 
-            "http://linghub.lider-project.eu/datahub/freebase": "40"
-        }, 
-        "tags": [
-            "ogd", 
-            "thesaurus", 
-            "format-owl", 
-            "format-skos", 
-            "opendata", 
-            "lod", 
-            "deref-vocab", 
-            "published-by-producer", 
-            "crossdomain", 
-            "llod", 
-            "technology"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/open-data-thesaurus", 
-        "aliveurls": 2, 
-        "deadurls": 1
-    }, 
-    "gesis-thesoz": {
-        "triples": "438901", 
-        "name": "TheSoz Thesaurus for the Social Sciences (GESIS)", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "5024", 
-            "http://linghub.lider-project.eu/datahub/stw-thesaurus-for-economics": "5294", 
-            "http://linghub.lider-project.eu/datahub/agrovoc-skos": "846"
-        }, 
-        "tags": [
-            "library", 
-            "socialsciences", 
-            "published-by-producer", 
-            "social", 
-            "lod", 
-            "provenance-metadata", 
-            "deref-vocab", 
-            "publications", 
-            "format-dc", 
-            "format-skosxl", 
-            "thesaurus", 
-            "format-skos", 
-            "void-sparql-endpoint", 
-            "germany", 
-            "format-rdf", 
-            "license-metadata", 
-            "lld", 
-            "linkeddata", 
-            "vocab-mappings"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/gesis-thesoz", 
-        "aliveurls": 6, 
-        "deadurls": 1
-    }, 
-    "lodac-bdls": {
-        "triples": "5764962", 
-        "name": "LODAC BDLS", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "18545", 
-            "http://linghub.lider-project.eu/datahub/dbpedia-ja": "7367"
-        }, 
-        "tags": [
-            "format-dcterms", 
-            "rdf", 
-            "format-skos", 
-            "format-rdfs", 
-            "format-dcndl", 
-            "deref-vocab", 
-            "license-metadata", 
-            "lifesciences", 
-            "biology", 
-            "no-vocab-mappings", 
-            "lod", 
-            "llod", 
-            "provenance-metadata", 
-            "published-by-producer"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/lodac-bdls", 
-        "aliveurls": 9, 
-        "deadurls": 0
-    }, 
-    "fao-geopolitical-ontology": {
-        "triples": "22495", 
-        "name": "FAO geopolitical ontology", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "195"
-        }, 
-        "tags": [
-            "access-web", 
-            "russian", 
-            "geopolitical", 
-            "lodcloud.nolinks", 
-            "spanish", 
-            "faostat", 
-            "lod", 
-            "services", 
-            "format-dc", 
-            "no-license-metadata", 
-            "historical", 
-            "dbpedia", 
-            "llod", 
-            "code", 
-            "lod.fao.geopolitical", 
-            "published-by-producer", 
-            "track", 
-            "vocab-mappings", 
-            "ontology", 
-            "profiles", 
-            "names", 
-            "iso3", 
-            "provenance-metadata", 
-            "english", 
-            "rdf", 
-            "id", 
-            "lodcloud.unconnected", 
-            "group", 
-            "crossdomain", 
-            "schemata", 
-            "geographic", 
-            "government", 
-            "format-owl", 
-            "change", 
-            "borders", 
-            "information", 
-            "chinese", 
-            "country", 
-            "memberships", 
-            "italian", 
-            "un", 
-            "owl", 
-            "arabic", 
-            "agrovoc", 
-            "french", 
-            "iso2", 
-            "deref-vocab", 
-            "fao", 
-            "country-netherlands"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/fao-geopolitical-ontology", 
-        "aliveurls": 7, 
-        "deadurls": 1
-    }, 
-    "asit": {
-        "triples": "420000", 
-        "name": "Atlante Sintattico d'Italia (ASIt)", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "130"
-        }, 
-        "tags": [
-            "questionnaire", 
-            "Italian", 
-            "corpus", 
-            "llod", 
-            "lod", 
-            "dialect", 
-            "syntax", 
-            "linguistics"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/asit", 
-        "aliveurls": 3, 
-        "deadurls": 0
-    }, 
-    "core": {
-        "triples": "101526714", 
-        "name": "CORE - Semantic Similarity of Open Access publications", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/rkb-explorer-oai": "200000"
-        }, 
-        "tags": [
-            "publications", 
-            "format-rdfs", 
-            "published-by-producer", 
-            "no-provenance-metadata", 
-            "license-metadata", 
-            "openuniversity", 
-            "bibliographic", 
-            "lod", 
-            "similarity", 
-            "llod", 
-            "oai", 
-            "no-proprietary-vocab"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/core", 
-        "aliveurls": 5, 
-        "deadurls": 1
-    }, 
-    "swefn-rdf": {
-        "triples": "339385", 
-        "name": "SweFN-RDF", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/isocat": "69"
-        }, 
-        "tags": [
-            "llod", 
-            "lexical-resource", 
-            "lod", 
-            "linguistic"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/swefn-rdf", 
-        "aliveurls": 3, 
-        "deadurls": 0
-    }, 
-    "cornetto": {
-        "triples": "792747", 
-        "name": "Cornetto1.2", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/vu-wordnet": "84473", 
-            "http://linghub.lider-project.eu/datahub/w3c-wordnet": "85116"
-        }, 
-        "tags": [
-            "linkeddata", 
-            "published-by-producer", 
-            "broken_link", 
-            "language", 
-            "format-skos", 
-            "format-rdf", 
-            "no-vocab-mappings", 
-            "dutch", 
-            "deref-vocab", 
-            "no-license-metadata", 
-            "vu", 
-            "cornetto", 
-            "linguistics", 
-            "crossdomain", 
-            "wordnet", 
-            "lod", 
-            "no-provenance-metadata"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/cornetto", 
-        "aliveurls": 2, 
-        "deadurls": 0
-    }, 
-    "de-gaap-ontology-lexicon": {
-        "triples": "246522", 
-        "name": "de-gaap-ontology-lexicon", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "43727"
-        }, 
-        "tags": [
-            "lod", 
-            "ontology", 
-            "ontology-lexicon", 
-            "llod", 
-            "parse tree", 
-            "multilingual", 
-            "lemon"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/de-gaap-ontology-lexicon", 
-        "aliveurls": 2, 
-        "deadurls": 3
-    }, 
-    "olia": {
-        "triples": "43775", 
-        "name": "Ontologies of Linguistic Annotations (OLiA)", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/gold": "264", 
-            "http://linghub.lider-project.eu/datahub/isocat": "361"
-        }, 
-        "tags": [
-            "annotation", 
-            "linguistics", 
-            "crossdomain", 
-            "nlp", 
-            "corpus", 
-            "lod", 
-            "llod"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/olia", 
-        "aliveurls": 4, 
-        "deadurls": 0
-    }, 
-    "agrovoc-skos": {
-        "triples": "4830173", 
-        "name": "AGROVOC ", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/gemet": "1191", 
-            "http://linghub.lider-project.eu/datahub/geopolitical": "253", 
-            "http://linghub.lider-project.eu/datahub/gesis-thesoz": "846", 
-            "http://linghub.lider-project.eu/datahub/stw-thesaurus-for-economics": "1136", 
-            "http://linghub.lider-project.eu/datahub/stitch-rameau": "686", 
-            "http://linghub.lider-project.eu/datahub/lcsh": "1093", 
-            "http://linghub.lider-project.eu/datahub/eurovoc": "1297", 
-            "http://linghub.lider-project.eu/datahub/dbpedia": "993", 
-            "http://linghub.lider-project.eu/datahub/nalt": "13390", 
-            "http://linghub.lider-project.eu/datahub/dewey_decimal_classification": "409"
-        }, 
-        "tags": [
-            "published-by-producer", 
-            "deref-vocab", 
-            "thesaurus", 
-            "forestry", 
-            "nutrition", 
-            "format-rdfs", 
-            "format-rdf", 
-            "lld", 
-            "lod", 
-            "agriculture", 
-            "fisheries-policy", 
-            "authorities", 
-            "schemata", 
-            "food", 
-            "publications", 
-            "animals"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/agrovoc-skos", 
-        "aliveurls": 5, 
-        "deadurls": 28
-    }, 
-    "saldom-rdf": {
-        "triples": "8349115", 
-        "name": "SALDOM-RDF", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/isocat": "69"
-        }, 
-        "tags": [
-            "lod", 
-            "llod", 
-            "linguistic", 
-            "morphology", 
-            "lexical-resource"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/saldom-rdf", 
-        "aliveurls": 3, 
-        "deadurls": 0
-    }, 
-    "apertium-rdf-es-pt": {
-        "triples": "279245", 
-        "name": "Apertium RDF ES-PT", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "22670"
-        }, 
-        "tags": [
-            "lemon", 
-            "linguistic lod", 
-            "translation", 
-            "linguistics", 
-            "bilingual", 
-            "rdf", 
-            "multilingual", 
-            "lexicon", 
-            "lod", 
-            "Spanish", 
-            "dictionary", 
-            "Apertium", 
-            "Portuguese", 
-            "llod"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/apertium-rdf-es-pt", 
-        "aliveurls": 6, 
-        "deadurls": 0
-    }, 
-    "rkb-explorer-wordnet": {
-        "triples": "2727001", 
-        "name": "WordNet (RKBExplorer)", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "38", 
-            "http://linghub.lider-project.eu/datahub/lingvoj": "38", 
-            "http://linghub.lider-project.eu/datahub/opencyc": "37", 
-            "http://linghub.lider-project.eu/datahub/w3c-wordnet": "38", 
-            "http://linghub.lider-project.eu/datahub/rkb-explorer-courseware": "38"
-        }, 
-        "tags": [
-            "no-vocab-mappings", 
-            "provenance-metadata", 
-            "format-dc", 
-            "crossdomain", 
-            "format-rdf", 
-            "llod", 
-            "published-by-third-party", 
-            "no-license-metadata", 
-            "void-sparql-endpoint", 
-            "lod", 
-            "deref-vocab"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/rkb-explorer-wordnet", 
-        "aliveurls": 6, 
-        "deadurls": 0
-    }, 
-    "chat-game-corpus": {
-        "triples": "15750", 
-        "name": "Chat Game corpus", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/fiesta": "4190"
-        }, 
-        "tags": [
-            "rdf", 
-            "format-rdf", 
-            "linguistics", 
-            "lod", 
-            "llod", 
-            "published-by-producer", 
-            "conferences locations lod"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/chat-game-corpus", 
-        "aliveurls": 1, 
-        "deadurls": 0
-    }, 
-    "ids": {
-        "triples": "2000000", 
-        "name": "Intercontinental Dictionary Series", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/wiktionary-dbpedia-org": "1832", 
-            "http://linghub.lider-project.eu/datahub/wals": "216", 
-            "http://linghub.lider-project.eu/datahub/lexvo": "217", 
-            "http://linghub.lider-project.eu/datahub/glottolog-langdoc": "216"
-        }, 
-        "tags": [
-            "linguistic", 
-            "typology", 
-            "crossdomain", 
-            "lod", 
-            "published-by-producer", 
-            "linguistics", 
-            "LOD"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/ids", 
-        "aliveurls": 4, 
-        "deadurls": 0
-    }, 
-    "lingvoj": {
-        "triples": "22442", 
-        "name": "lingvoj \u2013 Languages of the World (Multilingual RDF Descriptions)", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbtune-musicbrainz": "71", 
-            "http://linghub.lider-project.eu/datahub/dbpedia": "215", 
-            "http://linghub.lider-project.eu/datahub/umbel": "132", 
-            "http://linghub.lider-project.eu/datahub/lexvo": "510"
-        }, 
-        "tags": [
-            "format-rdf", 
-            "llod", 
-            "deref-vocab", 
-            "language", 
-            "published-by-producer", 
-            "license-not-specified", 
-            "crossdomain", 
-            "format-dc", 
-            "no-vocab-mappings", 
-            "linked-data", 
-            "license-metadata", 
-            "rdf", 
-            "format-owl", 
-            "lod", 
-            "provenance-metadata"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/lingvoj", 
-        "aliveurls": 1, 
-        "deadurls": 4
-    }, 
-    "apertium-rdf-es-gl": {
-        "triples": "206284", 
-        "name": "Apertium RDF ES-GL", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "16631"
-        }, 
-        "tags": [
-            "bilingual", 
-            "rdf", 
-            "lemon", 
-            "multilingual", 
-            "linguistic lod", 
-            "translation", 
-            "llod", 
-            "Apertium", 
-            "Galician", 
-            "dictionary", 
-            "linguistics", 
-            "lexicon", 
-            "lod", 
-            "Spanish"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/apertium-rdf-es-gl", 
-        "aliveurls": 6, 
-        "deadurls": 0
-    }, 
-    "t4gm-info": {
-        "triples": "12057", 
-        "name": "Thesaurus for Graphic Materials (t4gm.info)", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/lcsh": "12045"
-        }, 
-        "tags": [
-            "format-rdf", 
-            "format-dc", 
-            "library", 
-            "rdf", 
-            "ckanupload.esw.200910", 
-            "lod", 
-            "publications", 
-            "linkeddata", 
-            "decommissioned", 
-            "no-proprietary-vocab", 
-            "format-skos", 
-            "lld", 
-            "no-provenance-metadata", 
-            "thesaurus", 
-            "published-by-third-party"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/t4gm-info", 
-        "aliveurls": 2, 
-        "deadurls": 0
-    }, 
-    "apertium-rdf-en-gl": {
-        "triples": "425117", 
-        "name": "Apertium RDF EN-GL", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "32144"
-        }, 
-        "tags": [
-            "lemon", 
-            "dictionary", 
-            "translation", 
-            "multilingual", 
-            "Apertium", 
-            "lod", 
-            "bilingual", 
-            "Galician", 
-            "linguistics", 
-            "English", 
-            "llod", 
-            "linguistic lod", 
-            "rdf", 
-            "lexicon"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/apertium-rdf-en-gl", 
-        "aliveurls": 6, 
-        "deadurls": 0
-    }, 
-    "apertium-rdf-es-ca": {
-        "triples": "730501", 
-        "name": "Apertium RDF ES-CA", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "59655"
-        }, 
-        "tags": [
-            "Espa\u00f1ol", 
-            "Catalan", 
-            "rdf", 
-            "dictionary", 
-            "apertium", 
-            "bilingual", 
-            "linguistics", 
-            "linguistic LOD", 
-            "lexicon", 
-            "Spanish", 
-            "lod", 
-            "lemon", 
-            "multilingual", 
-            "translation", 
-            "es-ca", 
-            "llod", 
-            "Catal\u00e1n"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/apertium-rdf-es-ca", 
-        "aliveurls": 6, 
-        "deadurls": 0
-    }, 
-    "wiktionary-dbpedia-org": {
-        "triples": -1, 
-        "name": "", 
-        "links": {}, 
-        "tags": [
-            "linguistics", 
-            "crossdomain"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/wiktionary-dbpedia-org", 
-        "aliveurls": 6, 
-        "deadurls": 0
-    }, 
-    "germlex": {
-        "triples": "349021", 
-        "name": "Linked Old Germanic Dictionaries", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/lexvo": "34824", 
-            "http://linghub.lider-project.eu/datahub/lemonuby": "773"
+            "lexinfo": 50
         }, 
         "tags": [
             "ldl-2014", 
-            "German", 
-            "Dutch", 
-            "llod", 
-            "linguistics", 
-            "Gothic", 
-            "English", 
             "lexicon", 
+            "linguistic", 
+            "llod", 
             "lod", 
-            "etymology", 
-            "germanic", 
-            "lexical-resources"
+            "sentiment"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/germlex", 
-        "aliveurls": 2, 
-        "deadurls": 0
+        "url": "http://datahub.io/api/3/action/package_show?id=eurosentiment", 
+        "aliveurls": 33, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "975566", 
+        "email": "", 
+        "name": "EuroSentiment"
     }, 
-    "vu-wordnet": {
-        "triples": "4573749", 
-        "name": "WordNet 3.0 (VU Amsterdam)", 
+    "printed-book-auction-catalogues": {
+        "license": "http://www.opendefinition.org/licenses/odc-pddl", 
+        "deadurls": 1, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/cornetto": "84473", 
-            "http://linghub.lider-project.eu/datahub/lexvo": "117659", 
-            "http://linghub.lider-project.eu/datahub/w3c-wordnet": "112788"
+            "dbpedia": 1607.0
+        }, 
+        "tags": [
+            "auction", 
+            "bibliographic", 
+            "book", 
+            "catalogue", 
+            "deref-vocab", 
+            "dutch", 
+            "english", 
+            "format-rdf", 
+            "format-rdfs", 
+            "historical", 
+            "holland", 
+            "license-metadata", 
+            "lld", 
+            "lod", 
+            "no-vocab-mappings", 
+            "printed", 
+            "provenance-metadata", 
+            "publications", 
+            "published-by-third-party", 
+            "puritans"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=printed-book-auction-catalogues", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "55214", 
+        "email": "keithalexander@keithalexander.co.uk", 
+        "name": "English Language Books listed in Printed Book Auction Catalogues from 17th Century Holland"
+    }, 
+    "xwn": {
+        "license": "open", 
+        "deadurls": 0, 
+        "edgecount": 1, 
+        "links": {
+            "wordnet-rdf": 1715884.0
+        }, 
+        "tags": [
+            "lexicon", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "wordnet"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=xwn", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "10145232", 
+        "email": "", 
+        "name": "Open Multilingual Wordnet"
+    }, 
+    "clld-apics": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 0, 
+        "edgecount": 3, 
+        "links": {
+            "lexvo": 54.0, 
+            "dbpedia": 54.0, 
+            "clld-glottolog": 75.0
+        }, 
+        "tags": [
+            "linguistics", 
+            "llod", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=clld-apics", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "463009", 
+        "email": "apics.contact@gmail.com", 
+        "name": "CLLD-APICS"
+    }, 
+    "olia-discourse": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "olia": 81.0
+        }, 
+        "tags": [
+            "OLiA", 
+            "anaphora", 
+            "coherence relations", 
+            "coreference", 
+            "discourse", 
+            "discourse relations", 
+            "discourse structure", 
+            "information status", 
+            "information structure", 
+            "linguistic", 
+            "llod", 
+            "lod", 
+            "lrec-2014", 
+            "terminology"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=olia-discourse", 
+        "aliveurls": 2, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "4175", 
+        "email": "", 
+        "name": "OLiA Discourse"
+    }, 
+    "ontos-news-portal": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 0, 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 6935.0
+        }, 
+        "tags": [
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "media", 
+            "news", 
+            "nlp", 
+            "no-deref-vocab", 
+            "published-by-producer", 
+            "rdf", 
+            "semantic-web"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=ontos-news-portal", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "2677965", 
+        "email": "", 
+        "name": "Ontos News Portal"
+    }, 
+    "mlsa": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 0, 
+        "edgecount": 2, 
+        "links": {
+            "wiktionary-dbpedia-org": 1371.0, 
+            "lexvo": 2373.0
+        }, 
+        "tags": [
+            "crossdomain", 
+            "linguistics", 
+            "lod", 
+            "sentiment"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=mlsa", 
+        "aliveurls": 5, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "21000", 
+        "email": "", 
+        "name": "MLSA - A Multi-layered Reference Corpus for German Sentiment Analysis"
+    }, 
+    "open-data-thesaurus": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 0, 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 50.0
+        }, 
+        "tags": [
+            "crossdomain", 
+            "deref-vocab", 
+            "format-owl", 
+            "format-skos", 
+            "llod", 
+            "lod", 
+            "ogd", 
+            "opendata", 
+            "published-by-producer", 
+            "technology", 
+            "thesaurus"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=open-data-thesaurus", 
+        "aliveurls": 4, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "8000", 
+        "email": "a.blumauer@semantic-web.at", 
+        "name": "Open Data Thesaurus"
+    }, 
+    "gesis-thesoz": {
+        "license": "http://www.opendefinition.org/licenses/cc-nc", 
+        "deadurls": 1, 
+        "edgecount": 4, 
+        "links": {
+            "dbpedia": 5024.0, 
+            "stw-thesaurus-for-economics": 5294.0, 
+            "agrovoc-skos": 846.0
         }, 
         "tags": [
             "deref-vocab", 
-            "linguistics", 
-            "language", 
-            "published-by-third-party", 
-            "rdf", 
-            "no-vocab-mappings", 
+            "format-dc", 
+            "format-rdf", 
+            "format-skos", 
+            "format-skosxl", 
+            "germany", 
+            "library", 
+            "license-metadata", 
             "linkeddata", 
+            "lld", 
+            "lod", 
+            "provenance-metadata", 
+            "publications", 
+            "published-by-producer", 
+            "social", 
+            "socialsciences", 
             "thesaurus", 
+            "vocab-mappings", 
+            "void-sparql-endpoint"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=gesis-thesoz", 
+        "aliveurls": 7, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "438901", 
+        "email": "benjamin.zapilko@gesis.org", 
+        "name": "TheSoz Thesaurus for the Social Sciences (GESIS)"
+    }, 
+    "lodac-bdls": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 0, 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 18545.0
+        }, 
+        "tags": [
+            "biology", 
+            "deref-vocab", 
+            "format-dcndl", 
+            "format-dcterms", 
+            "format-rdfs", 
+            "format-skos", 
+            "license-metadata", 
+            "lifesciences", 
+            "llod", 
+            "lod", 
+            "no-vocab-mappings", 
+            "provenance-metadata", 
+            "published-by-producer", 
+            "rdf"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=lodac-bdls", 
+        "aliveurls": 10, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "5764962", 
+        "email": "", 
+        "name": "LODAC BDLS"
+    }, 
+    "fao-geopolitical-ontology": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 195.0
+        }, 
+        "tags": [
+            "access-web", 
+            "agrovoc", 
+            "arabic", 
+            "borders", 
+            "change", 
+            "chinese", 
+            "code", 
+            "country", 
+            "country-netherlands", 
+            "crossdomain", 
+            "dbpedia", 
+            "deref-vocab", 
+            "english", 
+            "fao", 
+            "faostat", 
+            "format-dc", 
+            "format-owl", 
+            "french", 
+            "geographic", 
+            "geopolitical", 
+            "government", 
+            "group", 
+            "historical", 
+            "id", 
+            "information", 
+            "iso2", 
+            "iso3", 
+            "italian", 
+            "llod", 
+            "lod", 
+            "lod.fao.geopolitical", 
+            "lodcloud.nolinks", 
+            "lodcloud.unconnected", 
+            "memberships", 
+            "names", 
+            "no-license-metadata", 
+            "ontology", 
+            "owl", 
+            "profiles", 
+            "provenance-metadata", 
+            "published-by-producer", 
+            "rdf", 
+            "russian", 
+            "schemata", 
+            "services", 
+            "spanish", 
+            "track", 
+            "un", 
+            "vocab-mappings"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=fao-geopolitical-ontology", 
+        "aliveurls": 8, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "22495", 
+        "email": "soonho.kim@fao.org", 
+        "name": "FAO geopolitical ontology"
+    }, 
+    "asit": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 0, 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 130.0
+        }, 
+        "tags": [
+            "Italian", 
+            "corpus", 
+            "dialect", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "questionnaire", 
+            "syntax"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=asit", 
+        "aliveurls": 4, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "420000", 
+        "email": "", 
+        "name": "Atlante Sintattico d'Italia (ASIt)"
+    }, 
+    "wordnet-rdf": {
+        "license": "attribution", 
+        "deadurls": 1, 
+        "edgecount": 3, 
+        "links": {
+            "lemonuby": 475503.0, 
+            "lexvo": 458907.0
+        }, 
+        "tags": [
+            "lexicon", 
+            "linguistics"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=wordnet-rdf", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "8903374", 
+        "email": "john@mccr.ae", 
+        "name": "WordNet-RDF"
+    }, 
+    "masc-bn-nif": {
+        "license": "public-domain", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "babelnet": 286416.0
+        }, 
+        "tags": [
+            "annotation", 
+            "babelnet", 
+            "format-nif", 
+            "llod", 
+            "masc"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=masc-bn-nif", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "5620229", 
+        "email": "flati@di.uniroma1.it", 
+        "name": "MASC-BN-NIF"
+    }, 
+    "dbpedia-de": {
+        "deadurls": 0, 
+        "edgecount": 2, 
+        "links": {}, 
+        "tags": [], 
+        "url": "http://datahub.io/api/3/action/package_show?id=dbpedia-de", 
+        "aliveurls": 2, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "email": "", 
+        "name": "DBpedia in German"
+    }, 
+    "lemonwiktionary": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "wiktionary-dbpedia-org": 500000.0
+        }, 
+        "tags": [
+            "crossdomain", 
+            "lemon", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "wiktionary"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=lemonwiktionary", 
+        "aliveurls": 8, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "5000000", 
+        "email": "", 
+        "name": "LemonWiktionary"
+    }, 
+    "opencyc": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 0, 
+        "edgecount": 4, 
+        "links": {}, 
+        "tags": [
+            "ckanupload.esw.200910", 
+            "crossdomain", 
+            "deref-vocab", 
+            "format-rdf", 
+            "license-nonefordb", 
+            "linkeddata", 
+            "lod", 
+            "lodcloud.nolinks", 
+            "no-license-metadata", 
+            "no-provenance-metadata", 
+            "no-vocab-mappings", 
+            "ontology", 
+            "published-by-producer", 
+            "rdf"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=opencyc", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "1600000", 
+        "email": "", 
+        "name": "OpenCyc"
+    }, 
+    "zhishi-me": {
+        "deadurls": 2, 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 193000.0
+        }, 
+        "tags": [
+            "chinese", 
+            "crossdomain", 
+            "format-rdf", 
+            "llod", 
+            "lod", 
+            "sparql"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=zhishi-me", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "125000000", 
+        "email": "", 
+        "name": "Zhishi.me"
+    }, 
+    "swefn-rdf": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "isocat": 69.0
+        }, 
+        "tags": [
+            "lexical-resource", 
+            "linguistic", 
+            "llod", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=swefn-rdf", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "339385", 
+        "email": "dana.dannells@svenska.gu.se", 
+        "name": "SweFN-RDF"
+    }, 
+    "cornetto": {
+        "license": "nc", 
+        "deadurls": 0, 
+        "edgecount": 2, 
+        "links": {
+            "vu-wordnet": 84473.0
+        }, 
+        "tags": [
+            "broken_link", 
+            "cornetto", 
+            "crossdomain", 
+            "deref-vocab", 
+            "dutch", 
+            "format-rdf", 
+            "format-skos", 
+            "language", 
+            "linguistics", 
+            "linkeddata", 
             "lod", 
             "no-license-metadata", 
-            "vu", 
-            "crossdomain", 
             "no-provenance-metadata", 
+            "no-vocab-mappings", 
+            "published-by-producer", 
+            "vu", 
             "wordnet"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/vu-wordnet", 
-        "aliveurls": 4, 
-        "deadurls": 1
+        "url": "http://datahub.io/api/3/action/package_show?id=cornetto", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "792747", 
+        "email": "jacco.van.ossenbruggen@cwi.nl", 
+        "name": "Cornetto1.2"
     }, 
-    "clld-wold": {
-        "triples": "1764648", 
-        "name": "CLLD-WOLD", 
+    "de-gaap-ontology-lexicon": {
+        "license": "public-domain", 
+        "deadurls": 4, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "229", 
-            "http://linghub.lider-project.eu/datahub/lexvo": "229", 
-            "http://linghub.lider-project.eu/datahub/clld-glottolog": "223"
+            "lexinfo": 43727.0
+        }, 
+        "tags": [
+            "lemon", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "ontology", 
+            "ontology-lexicon", 
+            "parse tree"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=de-gaap-ontology-lexicon", 
+        "aliveurls": 2, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "246522", 
+        "email": "", 
+        "name": "de-gaap-ontology-lexicon"
+    }, 
+    "olia": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 0, 
+        "edgecount": 7, 
+        "links": {
+            "isocat": 361.0, 
+            "gold": 264.0
+        }, 
+        "tags": [
+            "annotation", 
+            "corpus", 
+            "crossdomain", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "nlp"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=olia", 
+        "aliveurls": 5, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "43775", 
+        "email": "", 
+        "name": "Ontologies of Linguistic Annotations (OLiA)"
+    }, 
+    "agrovoc-skos": {
+        "license": "http://www.opendefinition.org/licenses/cc-nc", 
+        "deadurls": 2, 
+        "edgecount": 4, 
+        "links": {}, 
+        "tags": [
+            "agriculture", 
+            "animals", 
+            "authorities", 
+            "deref-vocab", 
+            "fisheries-policy", 
+            "food", 
+            "forestry", 
+            "format-rdf", 
+            "format-rdfs", 
+            "lld", 
+            "lod", 
+            "nutrition", 
+            "publications", 
+            "published-by-producer", 
+            "schemata", 
+            "thesaurus"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=agrovoc-skos", 
+        "aliveurls": 32, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "email": "caterina.caracciolo@fao.org", 
+        "name": "AGROVOC"
+    }, 
+    "saldom-rdf": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "isocat": 69.0
+        }, 
+        "tags": [
+            "lexical-resource", 
+            "linguistic", 
+            "llod", 
+            "lod", 
+            "morphology"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=saldom-rdf", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "8349115", 
+        "email": "dana.dannells@svenska.gu.se", 
+        "name": "SALDOM-RDF"
+    }, 
+    "apertium-rdf-es-pt": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 22670.0, 
+            "babelnet": 19325.0
+        }, 
+        "tags": [
+            "Apertium", 
+            "Portuguese", 
+            "Spanish", 
+            "bilingual", 
+            "dictionary", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-es-pt", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "279245", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF ES-PT"
+    }, 
+    "rkb-explorer-wordnet": {
+        "license": "closed", 
+        "deadurls": 0, 
+        "edgecount": 3, 
+        "links": {
+            "opencyc": 37.0, 
+            "dbpedia": 38.0, 
+            "lingvoj": 38.0
+        }, 
+        "tags": [
+            "crossdomain", 
+            "deref-vocab", 
+            "format-dc", 
+            "format-rdf", 
+            "llod", 
+            "lod", 
+            "no-license-metadata", 
+            "no-vocab-mappings", 
+            "provenance-metadata", 
+            "published-by-third-party", 
+            "void-sparql-endpoint"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=rkb-explorer-wordnet", 
+        "aliveurls": 7, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "2727001", 
+        "email": "", 
+        "name": "WordNet (RKBExplorer)"
+    }, 
+    "chat-game-corpus": {
+        "license": "http://www.opendefinition.org/licenses/odc-by", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "fiesta": 4190.0
+        }, 
+        "tags": [
+            "conferences locations lod", 
+            "format-rdf", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "published-by-producer", 
+            "rdf"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=chat-game-corpus", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "15750", 
+        "email": "pmenke@TechFak.Uni-Bielefeld.DE", 
+        "name": "Chat Game corpus"
+    }, 
+    "wiktionary": {
+        "license": "http://www.opendefinition.org/licenses/gfdl", 
+        "deadurls": 0, 
+        "edgecount": 1, 
+        "links": {}, 
+        "tags": [
+            "dictionary", 
+            "todo-breakdown"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=wiktionary", 
+        "aliveurls": 2, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "email": "", 
+        "name": "Wiktionary"
+    }, 
+    "parole-simple-lexinfo-ontology-lexicons": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 2, 
+        "edgecount": 1, 
+        "links": {
+            "lexinfo": 394.0
+        }, 
+        "tags": [
+            "PAROLE", 
+            "SIMPLE", 
+            "lemon", 
+            "lexicon", 
+            "lexinfo", 
+            "linguistic lod", 
+            "linguistics"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=parole-simple-lexinfo-ontology-lexicons", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "10279", 
+        "email": "", 
+        "name": "Parole/Simple 'lexinfo' Ontology & lexicons"
+    }, 
+    "lingvoj": {
+        "license": "open", 
+        "deadurls": 0, 
+        "edgecount": 5, 
+        "links": {
+            "dbpedia": 215.0, 
+            "lexvo": 510.0
+        }, 
+        "tags": [
+            "crossdomain", 
+            "deref-vocab", 
+            "format-dc", 
+            "format-owl", 
+            "format-rdf", 
+            "language", 
+            "license-metadata", 
+            "license-not-specified", 
+            "linked-data", 
+            "llod", 
+            "lod", 
+            "no-vocab-mappings", 
+            "provenance-metadata", 
+            "published-by-producer", 
+            "rdf"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=lingvoj", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "22442", 
+        "email": "bernard [dot] vatant [at] mondeca [dot] com", 
+        "name": "lingvoj \u2013 Languages of the World (Multilingual RDF Descriptions)"
+    }, 
+    "apertium-rdf-es-gl": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 16631.0, 
+            "babelnet": 4386.0
+        }, 
+        "tags": [
+            "Apertium", 
+            "Galician", 
+            "Spanish", 
+            "bilingual", 
+            "dictionary", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-es-gl", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "206284", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF ES-GL"
+    }, 
+    "gemet-annotated": {
+        "license": "http://www.opendefinition.org/licenses/odc-odbl", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "gemet": 103569.0
         }, 
         "tags": [
             "llod", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=gemet-annotated", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "231297", 
+        "email": "", 
+        "name": "gemet-annotated"
+    }, 
+    "yago": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 6, 
+        "edgecount": 5, 
+        "links": {
+            "dbpedia": 2625671.0
+        }, 
+        "tags": [
+            "ckanupload.esw.200910", 
+            "crossdomain", 
+            "format-rdf", 
+            "linkeddata", 
             "lod", 
+            "no-deref-vocab", 
+            "no-license-metadata", 
+            "no-provenance-metadata", 
+            "ontology", 
+            "published-by-producer"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=yago", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "120000000", 
+        "email": "", 
+        "name": "YAGO"
+    }, 
+    "clean-energy-data-reegle": {
+        "license": "http://reference.data.gov.uk/id/open-government-licence", 
+        "deadurls": 0, 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 330.0
+        }, 
+        "tags": [
+            "climate", 
+            "deref-vocab", 
+            "energy", 
+            "format-skos", 
+            "government", 
+            "license-metadata", 
+            "lod", 
+            "provenance-metadata", 
+            "published-by-producer", 
+            "renewable-energy", 
+            "save-energy", 
+            "thesaurus", 
+            "void-sparql-endpoint"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=clean-energy-data-reegle", 
+        "aliveurls": 14, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "334049", 
+        "email": "", 
+        "name": "Linked Clean Energy Data (reegle.info)"
+    }, 
+    "apertium-rdf-es-ca": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 59655.0, 
+            "babelnet": 35152.0
+        }, 
+        "tags": [
+            "Catalan", 
+            "Catal\u00e1n", 
+            "Espa\u00f1ol", 
+            "Spanish", 
+            "apertium", 
+            "bilingual", 
+            "dictionary", 
+            "es-ca", 
+            "lemon", 
+            "lexicon", 
+            "linguistic LOD", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-es-ca", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "730501", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF ES-CA"
+    }, 
+    "basque-eurowordnet-lemon-lexicon-3-0": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "lexinfo": 27222.0
+        }, 
+        "tags": [
+            "EuroWordNet", 
+            "lemon", 
+            "lexicon", 
+            "lexinfo"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=basque-eurowordnet-lemon-lexicon-3-0", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "1215583", 
+        "email": "", 
+        "name": "Basque EuroWordNet-lemon lexicon (3.0)"
+    }, 
+    "wiktionary-dbpedia-org": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 1, 
+        "edgecount": 6, 
+        "links": {
+            "dbpedia": 25155.0
+        }, 
+        "tags": [
+            "crossdomain", 
             "linguistics"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/clld-wold", 
+        "url": "http://datahub.io/api/3/action/package_show?id=wiktionary-dbpedia-org", 
+        "aliveurls": 5, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "email": "hellmann@informatik.uni-leipzig.de", 
+        "name": "wiktionary.dbpedia.org"
+    }, 
+    "germlex": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lemonuby": 773.0, 
+            "lexvo": 34824.0
+        }, 
+        "tags": [
+            "Dutch", 
+            "English", 
+            "German", 
+            "Gothic", 
+            "etymology", 
+            "germanic", 
+            "ldl-2014", 
+            "lexical-resources", 
+            "lexicon", 
+            "linguistics", 
+            "llod", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=germlex", 
         "aliveurls": 2, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "349021", 
+        "email": "", 
+        "name": "Linked Old Germanic Dictionaries"
+    }, 
+    "vu-wordnet": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 6, 
+        "links": {
+            "cornetto": 84473.0, 
+            "lexvo": 117659.0
+        }, 
+        "tags": [
+            "crossdomain", 
+            "deref-vocab", 
+            "language", 
+            "linguistics", 
+            "linkeddata", 
+            "lod", 
+            "no-license-metadata", 
+            "no-provenance-metadata", 
+            "no-vocab-mappings", 
+            "published-by-third-party", 
+            "rdf", 
+            "thesaurus", 
+            "vu", 
+            "wordnet"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=vu-wordnet", 
+        "aliveurls": 5, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "4573749", 
+        "email": "Jacco.van.Ossenbruggen@cwi.nl", 
+        "name": "WordNet 3.0 (VU Amsterdam)"
+    }, 
+    "clld-wold": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 0, 
+        "edgecount": 3, 
+        "links": {
+            "lexvo": 229.0, 
+            "dbpedia": 229.0, 
+            "clld-glottolog": 223.0
+        }, 
+        "tags": [
+            "linguistics", 
+            "llod", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=clld-wold", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "1764648", 
+        "email": "contact.wold@livingreviews.org", 
+        "name": "CLLD-WOLD"
     }, 
     "panlex": {
-        "triples": "786205297", 
-        "name": "PanLex", 
+        "license": "open", 
+        "deadurls": 0, 
+        "edgecount": 2, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "2536556", 
-            "http://linghub.lider-project.eu/datahub/lexvo": "372"
+            "dbpedia": 2536556.0, 
+            "lexvo": 372.0
         }, 
         "tags": [
             "lexicon", 
             "linguistics", 
             "machine_translation"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/panlex", 
-        "aliveurls": 5, 
-        "deadurls": 0
+        "url": "http://datahub.io/api/3/action/package_show?id=panlex", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "786205297", 
+        "email": "patrick.westphal@informatik.uni-leipzig.de", 
+        "name": "PanLex"
     }, 
     "dbpedia-spotlight-nif-ner-corpus": {
-        "triples": "3425", 
-        "name": "DBpedia Spotlight NIF NER Corpus", 
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "325"
+            "dbpedia": 325.0
         }, 
         "tags": [
-            "evaluatio", 
-            "ner", 
-            "spotlight", 
-            "training", 
-            "linguistics", 
-            "nif", 
             "dbpedia", 
+            "evaluatio", 
             "linguistic", 
-            "lod"
+            "linguistics", 
+            "lod", 
+            "ner", 
+            "nif", 
+            "spotlight", 
+            "training"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/dbpedia-spotlight-nif-ner-corpus", 
+        "url": "http://datahub.io/api/3/action/package_show?id=dbpedia-spotlight-nif-ner-corpus", 
         "aliveurls": 3, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "3425", 
+        "email": "magnus.knuth\"at\"hpi.uni-potsdam.de", 
+        "name": "DBpedia Spotlight NIF NER Corpus"
     }, 
-    "apertium-rdf-en-ca": {
-        "triples": "759601", 
-        "name": "Apertium RDF EN-CA", 
+    "dbpedia": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 2, 
+        "edgecount": 51, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "61337"
-        }, 
-        "tags": [
-            "multilingual", 
-            "linguistic lod", 
-            "lexicon", 
-            "lemon", 
-            "English", 
-            "apertium", 
-            "dictionary", 
-            "rdf", 
-            "Catalan", 
-            "linguistics", 
-            "lod", 
-            "translation", 
-            "en-ca", 
-            "bilingual", 
-            "llod"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/apertium-rdf-en-ca", 
-        "aliveurls": 6, 
-        "deadurls": 0
-    }, 
-    "clld-afbo": {
-        "triples": "12453", 
-        "name": "CLLD-afbo", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "147", 
-            "http://linghub.lider-project.eu/datahub/clld-glottolog": "157", 
-            "http://linghub.lider-project.eu/datahub/lexvo": "147"
-        }, 
-        "tags": [
-            "linguistics", 
-            "llod", 
-            "lod"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/clld-afbo", 
-        "aliveurls": 2, 
-        "deadurls": 0
-    }, 
-    "metashare": {
-        "triples": "8334", 
-        "name": "MetaShare metadata model", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "227", 
-            "http://linghub.lider-project.eu/datahub/dblp": "161"
-        }, 
-        "tags": [
-            "NLP", 
-            "lod", 
-            "metadata", 
-            "lrec-2014", 
-            "llod", 
-            "linguistics"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/metashare", 
-        "aliveurls": 1, 
-        "deadurls": 0
-    }, 
-    "alpino-rdf": {
-        "triples": "1799901", 
-        "name": "ALPINO RDF Treebank", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "466794"
-        }, 
-        "tags": [
-            "lod", 
-            "llod"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/alpino-rdf", 
-        "aliveurls": 4, 
-        "deadurls": 0
-    }, 
-    "socialsemweb-thesaurus": {
-        "triples": "20000", 
-        "name": "Social Semantic Web Thesaurus", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "300", 
-            "http://linghub.lider-project.eu/datahub/freebase": "200", 
-            "http://linghub.lider-project.eu/datahub/geonames-semantic-web": "100"
-        }, 
-        "tags": [
-            "technology", 
-            "format-skos", 
-            "socialweb", 
-            "deref-vocab", 
-            "research", 
-            "semanticweb", 
-            "people", 
-            "crossdomain", 
-            "published-by-producer", 
-            "format-owl", 
-            "usergeneratedcontent", 
-            "thesaurus", 
-            "lod"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/socialsemweb-thesaurus", 
-        "aliveurls": 3, 
-        "deadurls": 1
-    }, 
-    "apertium-rdf-pt-ca": {
-        "triples": "163149", 
-        "name": "Apertium RDF PT-CA", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "13146"
-        }, 
-        "tags": [
-            "linguistics", 
-            "rdf", 
-            "lod", 
-            "lexicon", 
-            "multilingual", 
-            "linguistic lod", 
-            "llod", 
-            "bilingual", 
-            "lemon", 
-            "Apertium", 
-            "machine_translation", 
-            "Catalan", 
-            "Portuguese"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/apertium-rdf-pt-ca", 
-        "aliveurls": 6, 
-        "deadurls": 0
-    }, 
-    "umthes": {
-        "triples": "300000", 
-        "name": "UMTHES", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/gemet": "3483"
-        }, 
-        "tags": [
-            "government", 
-            "no-deref-vocab", 
-            "environment", 
-            "lodcloud.needsfixing", 
-            "topic.government", 
-            "topic.schemata", 
-            "access-notavailable", 
-            "published-by-producer", 
-            "lld", 
-            "format-skos", 
-            "lod", 
-            "thesaurus"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/umthes", 
-        "aliveurls": 1, 
-        "deadurls": 0
-    }, 
-    "bible-ontology": {
-        "triples": "10618", 
-        "name": "Bible Ontology", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "371"
-        }, 
-        "tags": [
-            "format-dc", 
-            "publications", 
-            "lod", 
-            "bible", 
-            "llod", 
-            "religion", 
-            "format-skos", 
-            "format-foaf", 
-            "holy-bible", 
-            "linked-data", 
-            "deref-vocab", 
-            "published-by-third-party", 
-            "ontology", 
-            "format-frbr", 
-            "developed_in_korea", 
-            "format-dbpedia", 
-            "schemata", 
-            "no-vocab-mappings"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/bible-ontology", 
-        "aliveurls": 5, 
-        "deadurls": 6
-    }, 
-    "stw-thesaurus-for-economics": {
-        "triples": "112000", 
-        "name": "STW Thesaurus for Economics", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/gesis-thesoz": "4300", 
-            "http://linghub.lider-project.eu/datahub/ontobeef": "140", 
-            "http://linghub.lider-project.eu/datahub/dbpedia": "3000", 
-            "http://linghub.lider-project.eu/datahub/dnb-gemeinsame-normdatei": "10000", 
-            "http://linghub.lider-project.eu/datahub/agrovoc-skos": "1100", 
-            "http://linghub.lider-project.eu/datahub/german-labor-law-thesaurus": "270"
-        }, 
-        "tags": [
-            "vocab-mappings", 
-            "lod", 
-            "linkeddata", 
-            "format-owl", 
-            "economics", 
-            "germany", 
-            "format-rdf", 
-            "provenance-metadata", 
-            "format-cc", 
-            "format-rdfs", 
-            "license-metadata", 
-            "publications", 
-            "thesaurus", 
-            "format-skos", 
-            "format-xsd", 
-            "library", 
-            "deref-vocab", 
-            "format-dc", 
-            "published-by-producer", 
-            "rdf", 
-            "lld"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/stw-thesaurus-for-economics", 
-        "aliveurls": 10, 
-        "deadurls": 1
-    }, 
-    "lexvo": {
-        "triples": "353815", 
-        "name": "Lexvo", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/yago": "2577", 
-            "http://linghub.lider-project.eu/datahub/lingvoj": "448", 
-            "http://linghub.lider-project.eu/datahub/dbpedia": "2577"
-        }, 
-        "tags": [
-            "void-sparql-endpoint", 
-            "language", 
-            "format-xsd", 
-            "crossdomain", 
-            "published-by-third-party", 
-            "format-rdf", 
-            "rdf", 
-            "lod", 
-            "linkeddata", 
-            "ckanupload.esw.200910", 
-            "no-license-metadata", 
-            "deref-vocab", 
-            "no-vocab-mappings", 
-            "provenance-metadata"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/lexvo", 
-        "aliveurls": 4, 
-        "deadurls": 0
-    }, 
-    "dbnary": {
-        "triples": "35249544", 
-        "name": "dbnary", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "1260491"
-        }, 
-        "tags": [
-            "turkish", 
-            "french", 
-            "japanese", 
-            "lod", 
-            "llod", 
-            "wiktionary", 
-            "lexical-resources", 
-            "german", 
-            "english", 
-            "greek", 
-            "russian", 
-            "finnish", 
-            "italian", 
-            "Linguistic Dataset LOD RDF", 
-            "portuguese"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/dbnary", 
-        "aliveurls": 5, 
-        "deadurls": 0
-    }, 
-    "glottolog": {
-        "triples": "10000000", 
-        "name": "Glottolog", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/lexvo": "7000"
-        }, 
-        "tags": [
-            "llod", 
-            "linguistic", 
-            "format-lexvo", 
-            "bibliography", 
-            "format-dcterms", 
-            "format-gold", 
-            "lod", 
-            "published-by-producer", 
-            "deref-vocab", 
-            "provenance-metadata", 
-            "format-wgs", 
-            "format-foaf", 
-            "typology", 
-            "license-metadata", 
-            "publications", 
-            "no-proprietary-vocab", 
-            "format-bibo", 
-            "linguistics", 
-            "format-skos", 
-            "format-frbr"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/glottolog", 
-        "aliveurls": 7, 
-        "deadurls": 0
-    }, 
-    "gemet": {
-        "triples": "20229105", 
-        "name": "GEneral Multilingual Environmental Thesaurus", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "3005", 
-            "http://linghub.lider-project.eu/datahub/umthes": "3483", 
-            "http://linghub.lider-project.eu/datahub/agrovoc-skos": "1199"
-        }, 
-        "tags": [
-            "lld", 
-            "lod", 
-            "environment", 
-            "published-by-third-party", 
-            "european", 
-            "format-xhtml", 
-            "deref-vocab", 
-            "format-rdf", 
-            "provenance-metadata", 
-            "format-skos", 
-            "license-metadata", 
-            "schemata", 
-            "thesaurus"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/gemet", 
-        "aliveurls": 4, 
-        "deadurls": 1
-    }, 
-    "dbpedia-nl": {
-        "triples": "79674010", 
-        "name": "DBpedia in Dutch", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/linkedgeodata": "47397", 
-            "http://linghub.lider-project.eu/datahub/wordnet": "85486", 
-            "http://linghub.lider-project.eu/datahub/amsterdam-museum-as-edm-lod": "180", 
-            "http://linghub.lider-project.eu/datahub/dbtune": "48", 
-            "http://linghub.lider-project.eu/datahub/world-factbook-fu-berlin": "280", 
-            "http://linghub.lider-project.eu/datahub/musicbrainz": "5993", 
-            "http://linghub.lider-project.eu/datahub/dbpedia-pt": "303833", 
-            "http://linghub.lider-project.eu/datahub/eunis": "541", 
-            "http://linghub.lider-project.eu/datahub/drugbank": "755", 
-            "http://linghub.lider-project.eu/datahub/dbpedia-de": "359909", 
-            "http://linghub.lider-project.eu/datahub/gadm-geovocab": "1902", 
-            "http://linghub.lider-project.eu/datahub/nytimes-linked-open-data": "4829", 
-            "http://linghub.lider-project.eu/datahub/yago": "303500", 
-            "http://linghub.lider-project.eu/datahub/dbpedia-fr": "406628", 
-            "http://linghub.lider-project.eu/datahub/tcmgenedit_dataset": "182", 
-            "http://linghub.lider-project.eu/datahub/fu-berlin-dailymed": "329", 
-            "http://linghub.lider-project.eu/datahub/2000-us-census-rdf": "11769", 
-            "http://linghub.lider-project.eu/datahub/geospecies": "4273", 
-            "http://linghub.lider-project.eu/datahub/geonames": "46025", 
-            "http://linghub.lider-project.eu/datahub/dblp": "28", 
-            "http://linghub.lider-project.eu/datahub/freebase": "415255", 
-            "http://linghub.lider-project.eu/datahub/umbel": "112698", 
-            "http://linghub.lider-project.eu/datahub/fu-berlin-cordis": "41", 
-            "http://linghub.lider-project.eu/datahub/bbc-wildlife-finder": "237", 
-            "http://linghub.lider-project.eu/datahub/italian-public-schools-linkedopendata-it": "5686", 
-            "http://linghub.lider-project.eu/datahub/openei": "367", 
-            "http://linghub.lider-project.eu/datahub/revyu": "5", 
-            "http://linghub.lider-project.eu/datahub/dbpedia-el": "40921", 
-            "http://linghub.lider-project.eu/datahub/gutenberg": "874", 
-            "http://linghub.lider-project.eu/datahub/linkedmdb": "3712", 
-            "http://linghub.lider-project.eu/datahub/fu-berlin-sider": "947", 
-            "http://linghub.lider-project.eu/datahub/dbpedia": "566737", 
-            "http://linghub.lider-project.eu/datahub/fu-berlin-diseasome": "308", 
-            "http://linghub.lider-project.eu/datahub/opencyc": "15016"
+            "yago": 18100000.0, 
+            "opencyc": 20362.0
         }, 
         "tags": [
             "access-api", 
             "access-bulk", 
             "access-www", 
-            "no-provenance-metadata", 
+            "ckanupload.esw.200910", 
+            "crossdomain", 
             "deref-vocab", 
-            "format-rdfs", 
-            "void-sparql-endpoint", 
-            "rdf", 
-            "format-xhtml", 
-            "llod", 
-            "crossdomain", 
-            "no-vocab-mappings", 
-            "lod", 
-            "search", 
-            "wikipedia", 
-            "no-license-metadata", 
+            "format-foaf", 
+            "format-owl", 
+            "format-prov", 
             "format-rdf", 
+            "format-rdfs", 
+            "format-xhtml", 
+            "lod", 
+            "no-license-metadata", 
+            "no-vocab-mappings", 
+            "provenance-metadata", 
             "published-by-producer", 
-            "format-foaf"
+            "rdf", 
+            "search", 
+            "void-sparql-endpoint", 
+            "wikipedia"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/dbpedia-nl", 
-        "aliveurls": 7, 
-        "deadurls": 0
+        "url": "http://datahub.io/api/3/action/package_show?id=dbpedia", 
+        "aliveurls": 9, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "1200000000", 
+        "email": "dbpedia-discussion@lists.sourceforge.net", 
+        "name": "DBpedia"
     }, 
-    "lexinfo": {
-        "triples": "4374", 
-        "name": "lexinfo", 
+    "clld-afbo": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 0, 
+        "edgecount": 3, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/isocat": "359"
-        }, 
-        "tags": [
-            "ontology", 
-            "llod", 
-            "linguistic", 
-            "crossdomain", 
-            "lod"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/lexinfo", 
-        "aliveurls": 1, 
-        "deadurls": 0
-    }, 
-    "clld-phoible": {
-        "triples": "1664872", 
-        "name": "CLLD-PHOIBLE", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/gold": "61973", 
-            "http://linghub.lider-project.eu/datahub/dbpedia": "1672", 
-            "http://linghub.lider-project.eu/datahub/lexvo": "1672", 
-            "http://linghub.lider-project.eu/datahub/clld-wals": "1666"
+            "lexvo": 147.0, 
+            "dbpedia": 147.0, 
+            "clld-glottolog": 157.0
         }, 
         "tags": [
             "linguistics", 
-            "lod", 
-            "llod"
+            "llod", 
+            "lod"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/clld-phoible", 
-        "aliveurls": 2, 
-        "deadurls": 0
+        "url": "http://datahub.io/api/3/action/package_show?id=clld-afbo", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "12453", 
+        "email": "frank_seifart@eva.mpg.de", 
+        "name": "CLLD-afbo"
     }, 
-    "asjp": {
-        "triples": "5000000", 
-        "name": "Automated Similarity Judgment Program lexical data", 
+    "alpino-rdf": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 1, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/lexvo": "5000"
+            "lexinfo": 466794.0
         }, 
         "tags": [
-            "format-glottolog", 
-            "published-by-producer", 
-            "typology", 
-            "provenance-metadata", 
-            "vocab-mappings", 
-            "lod", 
             "llod", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=alpino-rdf", 
+        "aliveurls": 4, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "1799901", 
+        "email": "", 
+        "name": "ALPINO RDF Treebank"
+    }, 
+    "socialsemweb-thesaurus": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 0, 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 300.0
+        }, 
+        "tags": [
+            "crossdomain", 
             "deref-vocab", 
+            "format-owl", 
+            "format-skos", 
+            "lod", 
+            "people", 
+            "published-by-producer", 
+            "research", 
+            "semanticweb", 
+            "socialweb", 
+            "technology", 
+            "thesaurus", 
+            "usergeneratedcontent"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=socialsemweb-thesaurus", 
+        "aliveurls": 5, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "20000", 
+        "email": "", 
+        "name": "Social Semantic Web Thesaurus"
+    }, 
+    "apertium-rdf-en-ca": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 61337.0, 
+            "babelnet": 30245.0
+        }, 
+        "tags": [
+            "Catalan", 
+            "English", 
+            "apertium", 
+            "bilingual", 
+            "dictionary", 
+            "en-ca", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-en-ca", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "759601", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF EN-CA"
+    }, 
+    "apertium-rdf-pt-ca": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 13146.0, 
+            "babelnet": 14921.0
+        }, 
+        "tags": [
+            "Apertium", 
+            "Catalan", 
+            "Portuguese", 
+            "bilingual", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "machine_translation", 
+            "multilingual", 
+            "rdf"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-pt-ca", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "163149", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF PT-CA"
+    }, 
+    "dbpedia-fr": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 2, 
+        "edgecount": 5, 
+        "links": {
+            "dbpedia-nl": 402443.0, 
+            "dbpedia-it": 474524.0, 
+            "dbpedia": 854635.0
+        }, 
+        "tags": [
+            "crossdomain", 
+            "deref-vocab", 
+            "format-foaf", 
+            "format-owl", 
+            "format-rdf", 
+            "format-rdfs", 
+            "fran\u00e7ais", 
+            "french", 
+            "lod", 
+            "no-proprietary-vocab", 
+            "published-by-producer", 
+            "rdf", 
+            "wikipedia"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=dbpedia-fr", 
+        "aliveurls": 5, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "131000000", 
+        "email": "", 
+        "name": "DBpedia in French"
+    }, 
+    "umthes": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 0, 
+        "edgecount": 3, 
+        "links": {
+            "gemet": 3483.0
+        }, 
+        "tags": [
+            "access-notavailable", 
+            "environment", 
+            "format-skos", 
+            "government", 
+            "lld", 
+            "lod", 
+            "lodcloud.needsfixing", 
+            "no-deref-vocab", 
+            "published-by-producer", 
+            "thesaurus", 
+            "topic.government", 
+            "topic.schemata"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=umthes", 
+        "aliveurls": 2, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "300000", 
+        "email": "thomas.bandholtz@innoq.com", 
+        "name": "UMTHES"
+    }, 
+    "stw-thesaurus-for-economics": {
+        "license": "http://www.opendefinition.org/licenses/odc-odbl", 
+        "deadurls": 2, 
+        "edgecount": 4, 
+        "links": {
+            "dbpedia": 3000.0, 
+            "agrovoc-skos": 1100.0, 
+            "gesis-thesoz": 4300.0
+        }, 
+        "tags": [
+            "deref-vocab", 
+            "economics", 
+            "format-cc", 
+            "format-dc", 
+            "format-owl", 
+            "format-rdf", 
+            "format-rdfs", 
+            "format-skos", 
+            "format-xsd", 
+            "germany", 
+            "library", 
+            "license-metadata", 
+            "linkeddata", 
+            "lld", 
+            "lod", 
+            "provenance-metadata", 
+            "publications", 
+            "published-by-producer", 
+            "rdf", 
+            "thesaurus", 
+            "vocab-mappings"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=stw-thesaurus-for-economics", 
+        "aliveurls": 10, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "112000", 
+        "email": "j.neubert@zbw.eu", 
+        "name": "STW Thesaurus for Economics"
+    }, 
+    "environmental-applications-reference-thesaurus": {
+        "license": "http://www.opendefinition.org/licenses/cc-nc", 
+        "deadurls": 0, 
+        "edgecount": 5, 
+        "links": {
+            "umthes": 2970.0, 
+            "dbpedia": 1862.0, 
+            "eurovoc-in-skos": 1346.0, 
+            "agrovoc-skos": 1458.0, 
+            "gemet": 4365.0
+        }, 
+        "tags": [
+            "format-rdf", 
+            "format-skos", 
+            "geographic", 
+            "license-metadata", 
+            "lld", 
+            "lod", 
+            "no-proprietary-vocab", 
+            "provenance-metadata", 
+            "published-by-third-party", 
+            "schemata", 
+            "thesaurus", 
+            "vocab-mappings", 
+            "void-sparql-endpoint"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=environmental-applications-reference-thesaurus", 
+        "aliveurls": 5, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "133315", 
+        "email": "Riccardo.albertoni@ge.imati.cnr.it", 
+        "name": "EARTh"
+    }, 
+    "dbnary": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "lexinfo": 1260491.0
+        }, 
+        "tags": [
+            "Linguistic Dataset LOD RDF", 
+            "bulgarian", 
+            "english", 
+            "finnish", 
+            "french", 
+            "german", 
+            "greek", 
+            "italian", 
+            "japanese", 
+            "lexical-resources", 
+            "llod", 
+            "lod", 
+            "polish", 
+            "portuguese", 
+            "russian", 
+            "spanish", 
+            "turkish", 
+            "wiktionary"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=dbnary", 
+        "aliveurls": 5, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "35249544", 
+        "email": "", 
+        "name": "dbnary"
+    }, 
+    "catalan-eurowordnet-lemon-lexicon-3-0": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "lexinfo": 48090.0
+        }, 
+        "tags": [
+            "EuroWordNet", 
+            "lemon", 
+            "lexicon", 
+            "lexinfo", 
+            "linguistics lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=catalan-eurowordnet-lemon-lexicon-3-0", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "1841180", 
+        "email": "", 
+        "name": "Catalan EuroWordNet-lemon lexicon (3.0)"
+    }, 
+    "glottolog": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "lexvo": 7000.0
+        }, 
+        "tags": [
+            "bibliography", 
+            "deref-vocab", 
+            "format-bibo", 
             "format-dcterms", 
+            "format-foaf", 
+            "format-frbr", 
+            "format-gold", 
+            "format-lexvo", 
+            "format-skos", 
+            "format-wgs", 
             "license-metadata", 
             "linguistic", 
             "linguistics", 
+            "llod", 
+            "lod", 
+            "no-proprietary-vocab", 
+            "provenance-metadata", 
             "publications", 
-            "format-lexvo"
+            "published-by-producer", 
+            "typology"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/asjp", 
-        "aliveurls": 10, 
-        "deadurls": 0
+        "url": "http://datahub.io/api/3/action/package_show?id=glottolog", 
+        "aliveurls": 7, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "10000000", 
+        "email": "glottolog@eva.mpg.de", 
+        "name": "Glottolog"
     }, 
-    "apertium-rdf-es-ro": {
-        "triples": "400366", 
-        "name": "Apertium RDF ES-RO", 
+    "gemet": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 6, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "32453"
+            "umthes": 3483.0, 
+            "dbpedia": 3005.0, 
+            "agrovoc-skos": 1199.0
         }, 
         "tags": [
-            "bilingual", 
-            "linguistic lod", 
+            "deref-vocab", 
+            "environment", 
+            "european", 
+            "format-rdf", 
+            "format-skos", 
+            "format-xhtml", 
+            "license-metadata", 
+            "lld", 
+            "lod", 
+            "provenance-metadata", 
+            "published-by-third-party", 
+            "schemata", 
+            "thesaurus"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=gemet", 
+        "aliveurls": 4, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "20229105", 
+        "email": "soren.roug@eea.europa.eu", 
+        "name": "GEneral Multilingual Environmental Thesaurus"
+    }, 
+    "dbpedia-nl": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 0, 
+        "edgecount": 10, 
+        "links": {
+            "yago": 303500.0, 
+            "dbpedia-de": 359909.0, 
+            "opencyc": 15016.0, 
+            "gutenberg": 874.0, 
+            "dbpedia": 566737.0, 
+            "dbpedia-fr": 406628.0, 
+            "dbpedia-pt": 303833.0, 
+            "wordnet": 85486.0
+        }, 
+        "tags": [
+            "access-api", 
+            "access-bulk", 
+            "access-www", 
+            "crossdomain", 
+            "deref-vocab", 
+            "format-foaf", 
+            "format-rdf", 
+            "format-rdfs", 
+            "format-xhtml", 
+            "llod", 
+            "lod", 
+            "no-license-metadata", 
+            "no-provenance-metadata", 
+            "no-vocab-mappings", 
+            "published-by-producer", 
             "rdf", 
+            "search", 
+            "void-sparql-endpoint", 
+            "wikipedia"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=dbpedia-nl", 
+        "aliveurls": 8, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "79674010", 
+        "email": "dbpedia-dutch@lists.sourceforge.net", 
+        "name": "DBpedia in Dutch"
+    }, 
+    "clld-phoible": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 0, 
+        "edgecount": 4, 
+        "links": {
+            "dbpedia": 1672.0, 
+            "clld-wals": 1666.0, 
+            "gold": 61973.0, 
+            "lexvo": 1672.0
+        }, 
+        "tags": [
+            "linguistics", 
+            "llod", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=clld-phoible", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "1664872", 
+        "email": "steven.moran@uzh.ch", 
+        "name": "CLLD-PHOIBLE"
+    }, 
+    "asjp": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 0, 
+        "edgecount": 1, 
+        "links": {
+            "lexvo": 5000.0
+        }, 
+        "tags": [
+            "deref-vocab", 
+            "format-dcterms", 
+            "format-glottolog", 
+            "format-lexvo", 
+            "license-metadata", 
+            "linguistic", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "provenance-metadata", 
+            "publications", 
+            "published-by-producer", 
+            "typology", 
+            "vocab-mappings"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=asjp", 
+        "aliveurls": 11, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "5000000", 
+        "email": "sebastian_nordhoff@eva.mpg.de", 
+        "name": "Automated Similarity Judgment Program lexical data"
+    }, 
+    "apertium-rdf-es-ro": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 32453.0, 
+            "babelnet": 11606.0
+        }, 
+        "tags": [
+            "Apertium", 
+            "Romanian", 
+            "Spanish", 
+            "bilingual", 
+            "dictionary", 
             "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
             "lod", 
             "multilingual", 
-            "dictionary", 
-            "Spanish", 
-            "lexicon", 
-            "Romanian", 
-            "llod", 
-            "linguistics", 
-            "Apertium", 
+            "rdf", 
             "translation"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/apertium-rdf-es-ro", 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-es-ro", 
         "aliveurls": 6, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "400366", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF ES-RO"
     }, 
     "ietflang": {
-        "triples": "100000", 
-        "name": "ietflang", 
+        "license": "http://www.opendefinition.org/licenses/cc-zero", 
+        "deadurls": 1, 
+        "edgecount": 2, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/glottolog-langdoc": "10000", 
-            "http://linghub.lider-project.eu/datahub/ids": "10000", 
-            "http://linghub.lider-project.eu/datahub/lexvo": "10000", 
-            "http://linghub.lider-project.eu/datahub/wals": "10000"
+            "ids": 10000.0, 
+            "lexvo": 10000.0
         }, 
         "tags": [
             "llod", 
             "lod"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/ietflang", 
+        "url": "http://datahub.io/api/3/action/package_show?id=ietflang", 
         "aliveurls": 1, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "100000", 
+        "email": "john@mccr.ae", 
+        "name": "ietflang"
     }, 
-    "parole-simple-ont": {
-        "triples": "10279", 
-        "name": "Parole/Simple 'lexinfo' Ontology", 
+    "brown-corpus-in-rdf-nif": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 1, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "394"
+            "olia": 1161028.0
         }, 
         "tags": [
-            "lemon", 
-            "lexicon", 
+            "corpus", 
+            "linguistic", 
             "linguistics", 
-            "PAROLE", 
-            "lexinfo", 
-            "SIMPLE"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/parole-simple-ont", 
-        "aliveurls": 6, 
-        "deadurls": 0
-    }, 
-    "mexico": {
-        "triples": "305", 
-        "name": "MExiCo", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/olia": "5", 
-            "http://linghub.lider-project.eu/datahub/provenanceweb": "3", 
-            "http://linghub.lider-project.eu/datahub/isocat": "10", 
-            "http://linghub.lider-project.eu/datahub/metashare": "5"
-        }, 
-        "tags": [
-            "format-prov", 
-            "published-by-producer", 
-            "format-xsd", 
-            "schemata", 
-            "format-dc", 
-            "format-rdf", 
-            "deref-vocab", 
             "lod", 
-            "format-foaf", 
-            "format-owl", 
-            "general ontology of linguistic description", 
-            "linguistics", 
+            "nif", 
             "rdf"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/mexico", 
-        "aliveurls": 2, 
-        "deadurls": 0
+        "url": "http://datahub.io/api/3/action/package_show?id=brown-corpus-in-rdf-nif", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "14335131", 
+        "email": "bruemmer@informatik.uni-leipzig.de", 
+        "name": "Brown Corpus in RDF/NIF"
     }, 
-    "clld-sails": {
-        "triples": "564738", 
-        "name": "CLLD-SAILS", 
+    "apertium-rdf-eu-es": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "164", 
-            "http://linghub.lider-project.eu/datahub/lexvo": "164", 
-            "http://linghub.lider-project.eu/datahub/clld-glottolog": "164"
+            "lexinfo": 20563.0, 
+            "babelnet": 9707.0
         }, 
         "tags": [
+            "Apertium", 
+            "Basque", 
+            "Spanish", 
+            "bilingual", 
+            "dictionary", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
             "llod", 
             "lod", 
-            "linguistics"
+            "multilingual", 
+            "rdf", 
+            "translation"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/clld-sails", 
-        "aliveurls": 2, 
-        "deadurls": 0
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-eu-es", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "262336", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF EU-ES"
     }, 
-    "gemeenschappelijke-thesaurus-audiovisuele-archieven": {
-        "triples": "992797", 
-        "name": "Gemeenschappelijke Thesaurus Audiovisuele Archieven \u2013 Common Thesaurus Audiovisual Archives", 
+    "mexico": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 1, 
+        "edgecount": 3, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "25844"
+            "metashare": 5.0, 
+            "olia": 5.0, 
+            "isocat": 10.0
         }, 
         "tags": [
+            "deref-vocab", 
+            "format-dc", 
+            "format-foaf", 
+            "format-owl", 
+            "format-prov", 
+            "format-rdf", 
+            "format-xsd", 
+            "general ontology of linguistic description", 
+            "linguistics", 
+            "lod", 
             "published-by-producer", 
-            "format-skos", 
-            "no-provenance-metadata", 
-            "schemata", 
-            "no-vocab-mappings", 
+            "rdf", 
+            "schemata"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=mexico", 
+        "aliveurls": 2, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "305", 
+        "email": "pmenke@TechFak.Uni-Bielefeld.DE", 
+        "name": "MExiCo"
+    }, 
+    "clld-sails": {
+        "license": "http://www.opendefinition.org/licenses/cc-nc", 
+        "deadurls": 0, 
+        "edgecount": 3, 
+        "links": {
+            "lexvo": 164.0, 
+            "dbpedia": 164.0, 
+            "clld-glottolog": 164.0
+        }, 
+        "tags": [
+            "linguistics", 
+            "llod", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=clld-sails", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "564738", 
+        "email": "harald.hammarstroem@mpi.nl", 
+        "name": "CLLD-SAILS"
+    }, 
+    "ids": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 0, 
+        "edgecount": 3, 
+        "links": {
+            "wiktionary-dbpedia-org": 1832.0, 
+            "lexvo": 217.0
+        }, 
+        "tags": [
+            "LOD", 
+            "crossdomain", 
+            "linguistic", 
+            "linguistics", 
+            "lod", 
+            "published-by-producer", 
+            "typology"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=ids", 
+        "aliveurls": 4, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "2000000", 
+        "email": "bibiko@eva.mpg.de", 
+        "name": "Intercontinental Dictionary Series"
+    }, 
+    "gemeenschappelijke-thesaurus-audiovisuele-archieven": {
+        "license": "http://www.opendefinition.org/licenses/odc-odbl", 
+        "deadurls": 2, 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 25844.0
+        }, 
+        "tags": [
+            "deref-vocab", 
             "digital-humanities", 
+            "format-rdf", 
+            "format-skos", 
+            "gtaa", 
             "lod", 
             "media", 
-            "deref-vocab", 
-            "gtaa", 
-            "format-rdf", 
             "no-license-metadata", 
+            "no-provenance-metadata", 
+            "no-vocab-mappings", 
+            "published-by-producer", 
+            "schemata", 
             "thesaurus"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/gemeenschappelijke-thesaurus-audiovisuele-archieven", 
-        "aliveurls": 5, 
-        "deadurls": 0
+        "url": "http://datahub.io/api/3/action/package_show?id=gemeenschappelijke-thesaurus-audiovisuele-archieven", 
+        "aliveurls": 4, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "992797", 
+        "email": "", 
+        "name": "Gemeenschappelijke Thesaurus Audiovisuele Archieven \u2013 Common Thesaurus Audiovisual Archives"
     }, 
     "jrc-names": {
-        "triples": "1458828", 
-        "name": "JRC-Names", 
+        "license": "closed", 
+        "deadurls": 0, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "124651"
+            "dbpedia": 124651.0
         }, 
         "tags": [
             "AKSW", 
             "crossdomain", 
-            "linguistics", 
             "jrc", 
+            "linguistics", 
             "lod"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/jrc-names", 
-        "aliveurls": 5, 
-        "deadurls": 0
+        "url": "http://datahub.io/api/3/action/package_show?id=jrc-names", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "1458828", 
+        "email": "sherif@informatik.uni-leipzig.de", 
+        "name": "JRC-Names"
     }, 
     "reuters-128-nif-ner-corpus": {
-        "triples": "6967", 
-        "name": "Reuters-128 NIF NER Corpus", 
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "650"
+            "dbpedia": 650.0
         }, 
         "tags": [
-            "training", 
-            "nif", 
-            "lod", 
-            "rdf", 
-            "evaluation", 
             "corpus", 
+            "evaluation", 
+            "linguistic", 
             "linguistics", 
+            "lod", 
             "ner", 
-            "linguistic"
+            "nif", 
+            "rdf", 
+            "training"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/reuters-128-nif-ner-corpus", 
+        "url": "http://datahub.io/api/3/action/package_show?id=reuters-128-nif-ner-corpus", 
         "aliveurls": 3, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "6967", 
+        "email": "ricardo.usbeck@googlemail.com", 
+        "name": "Reuters-128 NIF NER Corpus"
+    }, 
+    "apertium-rdf-eu-en": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 19223.0, 
+            "babelnet": 9332.0
+        }, 
+        "tags": [
+            "Apertium", 
+            "Basque", 
+            "English", 
+            "bilingual", 
+            "dictionary", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-eu-en", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "265466", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF EU-EN"
     }, 
     "clld-wals": {
-        "triples": "1478985", 
-        "name": "CLLD-WALS", 
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 0, 
+        "edgecount": 3, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "2621", 
-            "http://linghub.lider-project.eu/datahub/lexvo": "2621", 
-            "http://linghub.lider-project.eu/datahub/geonames": "3044"
+            "dbpedia": 2621.0, 
+            "lexvo": 2621.0
         }, 
         "tags": [
-            "llod", 
             "linguistics", 
+            "llod", 
             "lod"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/clld-wals", 
-        "aliveurls": 2, 
-        "deadurls": 0
+        "url": "http://datahub.io/api/3/action/package_show?id=clld-wals", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "1478985", 
+        "email": "contact.wals@livingreviews.org", 
+        "name": "CLLD-WALS"
+    }, 
+    "wordnet": {
+        "license": "open", 
+        "deadurls": 0, 
+        "edgecount": 1, 
+        "links": {}, 
+        "tags": [
+            "language", 
+            "linguistic", 
+            "llod", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=wordnet", 
+        "aliveurls": 1, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "email": "", 
+        "name": "Wordnet"
+    }, 
+    "dbpedia-it": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {}, 
+        "tags": [], 
+        "url": "http://datahub.io/api/3/action/package_show?id=dbpedia-it", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "email": "info@spaziodati.eu ", 
+        "name": "DBpedia in Italian"
     }, 
     "xlid-lexica": {
-        "triples": "300000000", 
-        "name": "xLiD-Lexica", 
+        "deadurls": 3, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "unknown"
+            "dbpedia": 50
         }, 
         "tags": [
-            "word-list", 
-            "lexicon", 
+            "catalan", 
+            "chinese", 
             "dbpedia", 
+            "english", 
             "german", 
+            "lexicon", 
             "llod", 
             "lod", 
-            "spanish", 
-            "catalan", 
-            "slovenian", 
             "lrec-2014", 
-            "chinese", 
-            "english"
+            "slovenian", 
+            "spanish", 
+            "word-list"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/xlid-lexica", 
+        "url": "http://datahub.io/api/3/action/package_show?id=xlid-lexica", 
         "aliveurls": 1, 
-        "deadurls": 2
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "300000000", 
+        "email": "", 
+        "name": "xLiD-Lexica"
+    }, 
+    "isocat": {
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 0, 
+        "edgecount": 9, 
+        "links": {}, 
+        "tags": [
+            "crossdomain", 
+            "isocat", 
+            "linguistics", 
+            "llod", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=isocat", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "25000", 
+        "email": "", 
+        "name": "ISOcat"
     }, 
     "apertium-rdf-en-es": {
-        "triples": "576316", 
-        "name": "Apertium RDF EN-ES", 
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "45449"
+            "lexinfo": 45449.0, 
+            "babelnet": 31290.0
         }, 
         "tags": [
             "English", 
-            "llod", 
+            "Spanish", 
+            "apertium", 
+            "bilingual", 
+            "dictionary", 
+            "lemon", 
+            "lexicon", 
             "linguistic lod", 
-            "apertium", 
-            "dictionary", 
-            "lemon", 
-            "lod", 
             "linguistics", 
-            "multilingual", 
-            "lexicon", 
-            "rdf", 
-            "translation", 
-            "bilingual", 
-            "Spanish"
-        ], 
-        "url": "http://linghub.lider-project.eu/datahub/apertium-rdf-en-es", 
-        "aliveurls": 6, 
-        "deadurls": 0
-    }, 
-    "apertium-rdf": {
-        "triples": "4219995", 
-        "name": "Apertium RDF", 
-        "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "173993"
-        }, 
-        "tags": [
-            "lexical-resource", 
-            "apertium", 
-            "multilingual", 
             "llod", 
-            "bilingual", 
             "lod", 
-            "lexicon", 
-            "linguistic LOD", 
-            "dictionary", 
+            "multilingual", 
             "rdf", 
-            "lemon", 
             "translation"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/apertium-rdf", 
-        "aliveurls": 2, 
-        "deadurls": 2
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-en-es", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "576322", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF EN-ES"
+    }, 
+    "apertium-rdf": {
+        "license": "open", 
+        "deadurls": 2, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 690650.0, 
+            "babelnet": 277089.0
+        }, 
+        "tags": [
+            "apertium", 
+            "bilingual", 
+            "dictionary", 
+            "lemon", 
+            "lexical-resource", 
+            "lexicon", 
+            "linguistic LOD", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "8842516", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF"
     }, 
     "geological-survey-of-austria-thesaurus": {
-        "triples": "40912", 
-        "name": "Geological Survey of Austria (GBA) - Thesaurus", 
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 4, 
+        "edgecount": 2, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "100", 
-            "http://linghub.lider-project.eu/datahub/freebase": "93", 
-            "http://linghub.lider-project.eu/datahub/opencyc": "9"
+            "opencyc": 9.0, 
+            "dbpedia": 100.0
         }, 
         "tags": [
-            "geology", 
+            "austria", 
             "format-skos", 
-            "lod", 
-            "published-by-producer", 
-            "provenance-metadata", 
-            "thesaurus", 
-            "no-license-metadata", 
-            "geoscience", 
             "geographic", 
+            "geology", 
+            "geoscience", 
+            "lod", 
+            "no-license-metadata", 
             "no-proprietary-vocab", 
-            "austria"
+            "provenance-metadata", 
+            "published-by-producer", 
+            "thesaurus"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/geological-survey-of-austria-thesaurus", 
-        "aliveurls": 16, 
-        "deadurls": 4
+        "url": "http://datahub.io/api/3/action/package_show?id=geological-survey-of-austria-thesaurus", 
+        "aliveurls": 17, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "40912", 
+        "email": "thesaurus@geologie.ac.at", 
+        "name": "Geological Survey of Austria (GBA) - Thesaurus"
+    }, 
+    "apertium-rdf-oc-es": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 24505.0, 
+            "babelnet": 2932.0
+        }, 
+        "tags": [
+            "Apertium", 
+            "Occitan", 
+            "Spanish", 
+            "addiction", 
+            "bilingual", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-oc-es", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "317162", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF OC-ES"
     }, 
     "linked-hypernyms": {
-        "triples": "73000000", 
-        "name": "linked hypernyms", 
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 1, 
+        "edgecount": 2, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/yago": "unknown", 
-            "http://linghub.lider-project.eu/datahub/dbpedia": "unknown"
+            "yago": 50, 
+            "dbpedia": 50
         }, 
         "tags": [
-            "llod", 
+            "ldl-2014", 
             "lexical-resources", 
             "linguistics", 
-            "ldl-2014", 
+            "llod", 
             "lod"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/linked-hypernyms", 
+        "url": "http://datahub.io/api/3/action/package_show?id=linked-hypernyms", 
         "aliveurls": 4, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "73000000", 
+        "email": "", 
+        "name": "linked hypernyms"
     }, 
-    "news-100-nif-ner-corpus": {
-        "triples": "12289", 
-        "name": "News-100 NIF NER Corpus", 
+    "rss-500-nif-ner-corpus": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/dbpedia": "1547"
+            "dbpedia": 524.0
         }, 
         "tags": [
             "corpus", 
+            "evaluation", 
+            "linguistic", 
             "linguistics", 
-            "nif", 
-            "rdf", 
             "lod", 
             "ner", 
-            "linguistic", 
-            "training", 
-            "evaluation"
+            "nif", 
+            "rdf", 
+            "training"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/news-100-nif-ner-corpus", 
+        "url": "http://datahub.io/api/3/action/package_show?id=rss-500-nif-ner-corpus", 
         "aliveurls": 3, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "10038", 
+        "email": "ricardo.usbeck@googlemail.com", 
+        "name": "RSS-500 NIF NER CORPUS"
     }, 
-    "wold": {
-        "triples": "1000000", 
-        "name": "World Loanword Database", 
+    "news-100-nif-ner-corpus": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 1, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/wals": "202", 
-            "http://linghub.lider-project.eu/datahub/dbpedia": "16362", 
-            "http://linghub.lider-project.eu/datahub/iso-639-3": "244"
+            "dbpedia": 1547.0
         }, 
         "tags": [
+            "corpus", 
+            "evaluation", 
             "linguistic", 
-            "provenance-metadata", 
-            "format-skos", 
-            "LOD", 
-            "typology", 
-            "published-by-producer", 
-            "no-proprietary-vocab", 
-            "format-lexvo", 
-            "format-dcterms", 
-            "crossdomain", 
-            "lod", 
             "linguistics", 
+            "lod", 
+            "ner", 
+            "nif", 
+            "rdf", 
+            "training"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=news-100-nif-ner-corpus", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "12289", 
+        "email": "ricardo.usbeck@googlemail.com", 
+        "name": "News-100 NIF NER Corpus"
+    }, 
+    "wold": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 5, 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 16362.0
+        }, 
+        "tags": [
+            "LOD", 
+            "crossdomain", 
+            "format-dcterms", 
             "format-gold", 
             "format-kml", 
-            "format-wn"
+            "format-lexvo", 
+            "format-skos", 
+            "format-wn", 
+            "linguistic", 
+            "linguistics", 
+            "lod", 
+            "no-proprietary-vocab", 
+            "provenance-metadata", 
+            "published-by-producer", 
+            "typology"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/wold", 
-        "aliveurls": 5, 
-        "deadurls": 1
+        "url": "http://datahub.io/api/3/action/package_show?id=wold", 
+        "aliveurls": 2, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "1000000", 
+        "email": "forkel@eva.mpg.de", 
+        "name": "World Loanword Database"
+    }, 
+    "pleiades": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 0, 
+        "edgecount": 1, 
+        "links": {
+            "dbpedia": 127.0
+        }, 
+        "tags": [
+            "ancient", 
+            "archaeology", 
+            "classics", 
+            "format-foaf", 
+            "format-geo", 
+            "format-rdf", 
+            "format-skos", 
+            "format-spacerel", 
+            "format-spatial", 
+            "geodata", 
+            "geographic", 
+            "geography", 
+            "greek", 
+            "historyhackday", 
+            "lod", 
+            "no-licence-metadata", 
+            "no-proprietary-vocab", 
+            "no-provenance-metadata", 
+            "published-by-producer", 
+            "roman", 
+            "thesaurus"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=pleiades", 
+        "aliveurls": 4, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "2600000", 
+        "email": "sean.gillies@nyu.edu", 
+        "name": "Pleiades"
+    }, 
+    "iwn": {
+        "license": "http://www.opendefinition.org/licenses/odc-by", 
+        "deadurls": 1, 
+        "edgecount": 1, 
+        "links": {
+            "simple": 19896.0
+        }, 
+        "tags": [
+            "Linguistic Dataset LOD RDF", 
+            "linguistic", 
+            "llod", 
+            "lod", 
+            "rdf", 
+            "wordnet"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=iwn", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "515816", 
+        "email": "roberto.bartolini@ilc.cnr.it", 
+        "name": "IWN"
     }, 
     "clld-ewave": {
-        "triples": "320130", 
-        "name": "CLLD-EWAVE", 
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 0, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/lexvo": "0"
+            "lexvo": 0.0
         }, 
         "tags": [
             "linguistics", 
             "llod", 
             "lod"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/clld-ewave", 
-        "aliveurls": 2, 
-        "deadurls": 0
+        "url": "http://datahub.io/api/3/action/package_show?id=clld-ewave", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "320130", 
+        "email": "bernd.kortmann@anglistik.uni-freiburg.de", 
+        "name": "CLLD-EWAVE"
     }, 
     "lemonuby": {
-        "triples": "32916476", 
-        "name": "lemonUby", 
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa", 
+        "deadurls": 1, 
+        "edgecount": 7, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/wiktionary-dbpedia-org": "76294", 
-            "http://linghub.lider-project.eu/datahub/olia": "1470741", 
-            "http://linghub.lider-project.eu/datahub/isocat": "69", 
-            "http://linghub.lider-project.eu/datahub/w3c-wordnet": "84416", 
-            "http://linghub.lider-project.eu/datahub/vu-wordnet": "206773"
+            "vu-wordnet": 206773.0, 
+            "olia": 1470741.0, 
+            "isocat": 69.0, 
+            "wiktionary-dbpedia-org": 76294.0
         }, 
         "tags": [
-            "wiktionary", 
-            "omegawiki", 
-            "llod", 
-            "wordnet", 
-            "lod", 
             "english", 
-            "german", 
-            "lexical-resource", 
             "framenet", 
-            "lemon"
+            "german", 
+            "lemon", 
+            "lexical-resource", 
+            "llod", 
+            "lod", 
+            "omegawiki", 
+            "wiktionary", 
+            "wordnet"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/lemonuby", 
+        "url": "http://datahub.io/api/3/action/package_show?id=lemonuby", 
         "aliveurls": 3, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "32916476", 
+        "email": "", 
+        "name": "lemonUby"
+    }, 
+    "gutenberg": {
+        "license": "http://www.opendefinition.org/licenses/cc-by", 
+        "deadurls": 0, 
+        "edgecount": 1, 
+        "links": {}, 
+        "tags": [
+            "access-bulk", 
+            "access-ftp", 
+            "access-http", 
+            "access-rsync", 
+            "bibliographic", 
+            "book", 
+            "ebook", 
+            "format-dcmit", 
+            "format-rdf", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=gutenberg", 
+        "aliveurls": 5, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "5450115", 
+        "email": "http://www.gutenberg.org/wiki/Gutenberg:Contact_Information", 
+        "name": "Project Gutenberg"
+    }, 
+    "clld-glottolog": {
+        "deadurls": 0, 
+        "edgecount": 7, 
+        "links": {
+            "dbpedia": 7806.0, 
+            "gold": 24264.0, 
+            "lexvo": 7806.0
+        }, 
+        "tags": [
+            "linguistics", 
+            "llod", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=clld-glottolog", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "7245265", 
+        "email": "glottolog@eva.mpg.de", 
+        "name": "CLLD-GLOTTOLOG"
+    }, 
+    "apertium-rdf-eo-fr": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 52622.0, 
+            "babelnet": 11340.0
+        }, 
+        "tags": [
+            "Apertium", 
+            "Esperanto", 
+            "French", 
+            "bilingual", 
+            "dictionary", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-eo-fr", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "726281", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF EO-FR"
+    }, 
+    "multext-east": {
+        "license": "closed", 
+        "deadurls": 0, 
+        "edgecount": 1, 
+        "links": {
+            "gold": 15355.0
+        }, 
+        "tags": [
+            "linguistics", 
+            "llod", 
+            "lod"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=multext-east", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "127651", 
+        "email": "", 
+        "name": "Multext-East"
     }, 
     "masc": {
-        "triples": "1000000", 
-        "name": "Manually Annotated Sub-Corpus (MASC) of the Open American National Corpus", 
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/olia": "67000"
+            "olia": 67000.0
         }, 
         "tags": [
-            "llod", 
-            "english", 
-            "crossdomain", 
             "american-english", 
             "annotation", 
-            "lod", 
-            "corpus"
+            "corpus", 
+            "crossdomain", 
+            "english", 
+            "llod", 
+            "lod"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/masc", 
+        "url": "http://datahub.io/api/3/action/package_show?id=masc", 
         "aliveurls": 3, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "1000000", 
+        "email": "anc@cs.vassar.edu", 
+        "name": "Manually Annotated Sub-Corpus (MASC) of the Open American National Corpus"
+    }, 
+    "apertium-rdf-es-ast": {
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
+        "links": {
+            "lexinfo": 66367.0, 
+            "babelnet": 2795.0
+        }, 
+        "tags": [
+            "Apertium", 
+            "Asturian", 
+            "Spanish", 
+            "bilingual", 
+            "dictionary", 
+            "general ontology of linguistic description", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-es-ast", 
+        "aliveurls": 6, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "825540", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF ES-AST"
     }, 
     "phoible": {
-        "triples": "133076", 
-        "name": "Phonetics Information Base and Lexicon (PHOIBLE)", 
+        "license": "open", 
+        "deadurls": 0, 
+        "edgecount": 1, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/gold": "3422"
+            "gold": 3422.0
         }, 
         "tags": [
             "linguistics", 
+            "llod", 
             "lod", 
-            "typology", 
-            "typological-database", 
             "phonology", 
-            "llod"
+            "typological-database", 
+            "typology"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/phoible", 
-        "aliveurls": 3, 
-        "deadurls": 0
+        "url": "http://datahub.io/api/3/action/package_show?id=phoible", 
+        "aliveurls": 4, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "133076", 
+        "email": "", 
+        "name": "Phonetics Information Base and Lexicon (PHOIBLE)"
     }, 
     "apertium-rdf-fr-ca": {
-        "triples": "152002", 
-        "name": "Apertium RDF FR-CA", 
+        "license": "open", 
+        "deadurls": 1, 
+        "edgecount": 2, 
         "links": {
-            "http://linghub.lider-project.eu/datahub/lexinfo": "12355"
+            "lexinfo": 12355.0, 
+            "babelnet": 13361.0
         }, 
         "tags": [
-            "rdf", 
-            "multilingual", 
-            "llod", 
-            "translation", 
-            "lexicon", 
-            "Catalan", 
-            "dictionary", 
-            "linguistic lod", 
-            "lod", 
-            "French", 
-            "linguistics", 
-            "lemon", 
             "Apertium", 
-            "bilingual"
+            "Catalan", 
+            "French", 
+            "bilingual", 
+            "dictionary", 
+            "lemon", 
+            "lexicon", 
+            "linguistic lod", 
+            "linguistics", 
+            "llod", 
+            "lod", 
+            "multilingual", 
+            "rdf", 
+            "translation"
         ], 
-        "url": "http://linghub.lider-project.eu/datahub/apertium-rdf-fr-ca", 
+        "url": "http://datahub.io/api/3/action/package_show?id=apertium-rdf-fr-ca", 
         "aliveurls": 6, 
-        "deadurls": 0
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "152002", 
+        "email": "jgracia@fi.upm.es", 
+        "name": "Apertium RDF FR-CA"
+    }, 
+    "dbpedia-pt": {
+        "license": "public-domain", 
+        "deadurls": 0, 
+        "edgecount": 3, 
+        "links": {
+            "dbpedia": 365839.0
+        }, 
+        "tags": [
+            "crossdomain", 
+            "deref-vocab", 
+            "format-rdf", 
+            "lod", 
+            "published-by-producer"
+        ], 
+        "url": "http://datahub.io/api/3/action/package_show?id=dbpedia-pt", 
+        "aliveurls": 3, 
+        "formats": 0, 
+        "rdf_owl": 0, 
+        "triples": "24607332", 
+        "email": "", 
+        "name": "DBpedia in Portuguese"
     }
 }
