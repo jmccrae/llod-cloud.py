@@ -18,6 +18,7 @@ cp llod-cloud.json ../linguistic-lod/site/llod-cloud-$THIS_MONTH.json
 cd ../linguistic-lod/site/
 rm llod-cloud.json
 ln -s llod-cloud-$THIS_MONTH.json llod-cloud.json
+sudo ln -s `pwd`/llod-cloud-$THIS_MONTH.json /var/www/linguistic-lod/html/llod-cloud.json
 
 echo "Please go to http://linguistic-lod.org/llod-cloud and save the diagram as site/images/llod-cloud-$THIS_MONTH.svg to the GitHub repo liderproject/linguistic-lod"
 echo "Press any key when OK"
@@ -138,3 +139,5 @@ rm tmp
 git add llod-cloud-$THIS_MONTH.json llod-cloud-$THIS_MONTH.php
 git commit -am "LLOD cloud added for $THIS_MONTH_NICE"
 git push
+
+sudo cp -r * /var/www/linguistic-lod/html/

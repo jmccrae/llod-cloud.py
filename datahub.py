@@ -52,12 +52,13 @@ license_uris = {
 
 
 def ckanListDatasetsInGroup(group):
-    url = baseURL + "group_show?id=" + group
+    url = baseURL + "package_search?rows=200&fq=organization:" + group
     return json.loads(urllib2.urlopen(url).read())
 
 
 def ckanListDatasetsForTag(tag):
-    url = baseURL + "tag_show?id=" + tag
+    #url = baseURL + "tag_show?id=" + tag
+    url = baseURL + "package_search?rows=200&fq=tags:" + tag
     return json.loads(urllib2.urlopen(url).read())
 
 
@@ -70,12 +71,12 @@ nodes = {}
 # NEW: check not only group data sets, but everything with a corresponding tag
 
 datasetJSON = ckanListDatasetsInGroup("owlg")
-datasets = [ds["name"] for ds in datasetJSON["result"]["packages"]]
+datasets = [ds["name"] for ds in datasetJSON["result"]["results"]]
 print "group 'owlg': "+str(len(datasets))+" datasets"
 sys.stdout.flush()
 for group in ["mlode2012", "sfb673"]:
     newDatasetJSON = ckanListDatasetsInGroup(group)
-    newDatasets = [ds["name"] for ds in newDatasetJSON["result"]["packages"]]
+    newDatasets = [ds["name"] for ds in newDatasetJSON["result"]["results"]]
     datasets = datasets + newDatasets
     datasets = list(set(datasets))
     print "+ group '"+group+"': "+str(len(datasets))+" datasets"
@@ -84,7 +85,7 @@ for tag in ["llod", "linguistics%20lod", "lexicon", "corpus", "thesaurus",
             "isocat", "linguistic", "linguistics", "typology", "lrec-2014",
             "lexical-resources"]:
     newDatasetJSON = ckanListDatasetsForTag(tag)
-    newDatasets = [ds["name"] for ds in newDatasetJSON["result"]["packages"]]
+    newDatasets = [ds["name"] for ds in newDatasetJSON["result"]["results"]]
     datasets = datasets + newDatasets
     datasets = list(set(datasets))
     print "+ tag '"+tag+"': "+str(len(datasets))+" datasets"
