@@ -20,7 +20,7 @@ from urllib2 import HTTPError, URLError
 print("DataHub LLOD cloud generator")
 sys.stdout.flush()
 
-baseURL = "http://datahub.io/api/3/action/"
+baseURL = "https://old.datahub.io/api/3/action/"
 blacklist = [
     'ss', 																					# spam
     'cgsddforja', 																			# spam
@@ -49,29 +49,31 @@ license_uris = {
 }
 
 
+def url2json(url):
+    return json.loads(urllib2.urlopen(urllib2.Request(url, headers={'User-Agent': 'python'})).read())
 
 
 def ckanListDatasetsInGroup(group):
     url = baseURL + "package_search?rows=200&fq=organization:" + group
-    return json.loads(urllib2.urlopen(url).read())
+    return url2json(url)
 
 
 def ckanListDatasetsForTag(tag):
     #url = baseURL + "tag_show?id=" + tag
     url = baseURL + "package_search?rows=200&fq=tags:" + tag
-    return json.loads(urllib2.urlopen(url).read())
+    return url2json(url)
 
 
 def ckanDataset(dataset):
     url = baseURL + "package_show?id=" + dataset
-    return json.loads(urllib2.urlopen(url).read())
+    return url2json(url)
 
 nodes = {}
 
 # NEW: check not only group data sets, but everything with a corresponding tag
 
 datasetJSON = ckanListDatasetsInGroup("owlg")
-datasets = [ds["name"] for ds in datasetJSON["result"]["results"]]
+datasets = [ds["name"] for ds in datasetJSON["result"]["results"]] + ["dbpedia"]
 print "group 'owlg': "+str(len(datasets))+" datasets"
 sys.stdout.flush()
 for group in ["mlode2012", "sfb673"]:
